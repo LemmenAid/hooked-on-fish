@@ -56,6 +56,27 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #f3f3f3;
+	z-index: -1;
+}
+
+.fixed-size-img {
+    width: 100%;  /* Make sure it spans the card width */
+    height: 200px; /* Adjust to your desired fixed height */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
