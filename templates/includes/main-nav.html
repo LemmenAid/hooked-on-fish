@@ -15,11 +15,11 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Our Products
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="products-link">
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-                <a href="" class="dropdown-item">Kona-Mara</a>
-                <a href="" class="dropdown-item">Cracking Crabber</a>
-                <a href="" class="dropdown-item">Scallop Slider</a>
+                {% for product in nav_products %}
+                <a href="{% url 'product_detail' product.id %}" class="dropdown-item">{{ product.name }}</a>
+                {% endfor %}
             </div>
         </li>
 
