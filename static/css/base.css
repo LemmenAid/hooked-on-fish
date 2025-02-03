@@ -134,3 +134,9 @@ body {
         height: calc(100vh - 116px);
     }
 }
+
+@media (min-width: 991px) {
+    .custom-justify {
+        justify-content: center;
+    }
+}
