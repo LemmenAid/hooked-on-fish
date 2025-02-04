@@ -95,7 +95,7 @@ body {
 
 .fixed-size-img {
     width: 100%;  /* Make sure it spans the card width */
-    height: 200px; /* Adjust to your desired fixed height */
+    height: 250px; /* Adjust to your desired fixed height */
     object-fit: cover; /* Ensures the image fills the space without distortion */
 }
 
