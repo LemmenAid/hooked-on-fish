@@ -108,11 +108,27 @@ body {
 }
 
 .fixed-size-img {
-    width: 100%;  /* Make sure it spans the card width */
-    height: 250px; /* Adjust to your desired fixed height */
-    object-fit: cover; /* Ensures the image fills the space without distortion */
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
+/* ------------------------------- bootstrap toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 
 /* -------------------------------- Media Queries */
 
