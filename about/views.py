@@ -51,5 +51,5 @@ def grounds(request):
         request,
         "about/grounds.html",
         {"grounds": grounds,
-         "no_agrounds_content": not grounds},
+         "no_grounds_content": not grounds},
     )
