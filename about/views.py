@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import About
+from .models import About, Grounds
 
 
 def about_me(request):
@@ -26,4 +26,30 @@ def about_me(request):
         "about/about.html",
         {"about": about,
          "no_about_content": not about},
+    )
+
+
+def grounds(request):
+    """
+    Renders the Fishing Grounds page with the most recent content.
+    Displays an individual instance of :model:`grounds.Grounds`.
+
+    **Context**
+    ``grounds``
+        The most recent instance of :model:`grounds.Grounds`.
+
+    **Template:**
+    :template:`about/grounds.html`
+    """
+    grounds = Grounds.objects.all().order_by('-updated_on').first()
+
+    # If no About object exists, provide a fallback message
+    if not grounds:
+        grounds = None
+
+    return render(
+        request,
+        "about/grounds.html",
+        {"grounds": grounds,
+         "no_agrounds_content": not grounds},
     )

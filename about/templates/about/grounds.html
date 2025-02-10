@@ -18,23 +18,23 @@
             <div class="row mb-4">
                 <!-- Title -->
                  <div class= "col-12">
-                    <h2 class="h2-about mb-4 mt-2">{{ about.title }}</h2>
+                    <h2 class="h2-about mb-4 mt-2">{{ grounds.title }}</h2>
                  </div>
 
                  <!-- Content -->
                 <div class="col-md-6 order-1">
-                    {% if no_about_content %}
-                        <p>No about content available</p>
-                        {% else %}        
+                    {% if no_grounds_content %}
+                        <p>No info about our fishing grounds available</p>
+                        {% else %}    
                         <div>
-                            {{ about.content | safe }}
+                            {{ grounds.content | safe }}
                         </div>
                     {% endif %}
                     <hr>
                     <!-- Updated date -->
                     <div class="row mt-3">
                         <div class="col-12">
-                        <p class="text-end"><em>Updated on: {{ about.updated_on }}</em></p>
+                        <p class="text-end"><em>Updated on: {{ grounds.updated_on }}</em></p>
                         </div>
                     </div>
                 </div>
@@ -42,10 +42,10 @@
                 <!-- About Image -->
                 <div class="col-md-6 order-2 text-center">
                     <div class="top-image-container mt-2">
-                        {% if "placeholder" in about.profile_image.url %}
-                        <img src="{% static 'images/about.jpg' %}" class="top-image" alt="placeholder image">
+                        {% if "placeholder" in grounds.profile_image.url %}
+                        <img src="{% static 'images/grounds.jpg' %}" class="top-image" alt="placeholder image">
                         {% else %}
-                        <img src="{{ about.profile_image.url }}" class="top-image" alt="{{ about.title }}">
+                        <img src="{{ grounds.profile_image.url }}" class="top-image" alt="{{ grounds.title }}">
                         {% endif %}
                     </div>
                 </div>
