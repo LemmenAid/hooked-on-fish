@@ -123,6 +123,33 @@ body {
     overflow: hidden;
 }
 
+/* ------------------------------- custom Styles Contact Page */
+
+.top-contact-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-contact-image {
+    object-fit: cover;
+    height: auto;
+    max-height: 350px;
+    max-width: 100%;
+    display: block;
+}
+
+.contact-form-container {
+    background: #ffffffcc; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    backdrop-filter: blur(5px);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 
 /* ------------------------------- bootstrap toasts */
 

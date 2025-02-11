@@ -18,7 +18,7 @@
             <div class="row mb-4">
                 <!-- Title -->
                  <div class= "col-12">
-                    <h2 class="h2-buy mb-4 mt-2">{{ buy_in_person.title }}</h2>
+                    <h2 class="h2-buy mb-4 mt-4">{{ buy_in_person.title }}</h2>
                  </div>
 
                  <!-- Content -->
@@ -41,7 +41,7 @@
 
                 <!-- Image -->
                 <div class="col-md-6 order-2 text-center">
-                    <div class="top-image-container mt-2">
+                    <div class="top-image-container">
                         {% if "placeholder" in buy_in_person.profile_image.url %}
                         <img src="{% static 'images/buy_in_person.jpg' %}" class="top-image" alt="placeholder image">
                         {% else %}

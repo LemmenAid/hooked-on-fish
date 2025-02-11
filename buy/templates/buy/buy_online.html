@@ -18,15 +18,15 @@
             <div class="row mb-4">
                 <!-- Title -->
                  <div class= "col-12">
-                    <h2 class="h2-buy mb-4 mt-2">{{ buy_online.title }}</h2>
+                    <h2 class="h2-buy mb-4 mt-4">{{ buy_online.title }}</h2>
                  </div>
 
                  <!-- Content -->
-                <div class="col-md-6 order-1">
+                <div class="col-md-6 order-1 mb-4">
                     {% if no_buy_online_content %}
                         <p>No buy online content available</p>
                         {% else %}        
-                        <div>
+                        <div class="mb-4">
                             {{ buy_online.content | safe }}
                         </div>
                     {% endif %}
@@ -41,7 +41,7 @@
 
                 <!-- Image -->
                 <div class="col-md-6 order-2 text-center">
-                    <div class="top-image-container mt-2">
+                    <div class="top-image-container">
                         {% if "placeholder" in buy_online.profile_image.url %}
                         <img src="{% static 'images/buy_online.jpg' %}" class="top-image" alt="placeholder image">
                         {% else %}
