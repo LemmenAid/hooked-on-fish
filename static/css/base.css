@@ -150,6 +150,31 @@ body {
 }
 
 
+/* ------------------------------- Styles for Footer */
+.footer-container {
+    z-index: 1;
+    background-color:#ffffffcc;
+    color: #252525;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.footer-logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #252525;
+    padding: 10px;
+}
+
+.footer-logo a:hover {
+    color: #c7c7c7;
+    font-weight: bolder;
+}
+
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
