@@ -11,25 +11,24 @@
 {% endblock %}
 
 {% block content %}
-
-    <hr>
         <div class="container mt-5">
             <div class="contact-form-container p-4">
                 <!-- Content -->
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6 mt-4">
-                    <h2 class="h2-contact mb-3">CONTACT US</h2>
-                    <p class="mb-5">Have a question about our seafood, placing an order, 
-                                    or something else? We'd love to hear from you! 
-                                    Fill out the form below, and we'll get back to you as soon as we can. 
-                                    Whether it's about our fresh catch, sustainability practices, 
-                                    or just to say hello, we're happy to chat.</p>
-
+                    <h2 class="h2-contact mb-4">CONTACT US</h2>
+                    <p class="mb-4">
+                        Have a question about our seafood, placing an order, 
+                        or something else? We'd love to hear from you! 
+                        Fill out the form below, and we'll get back to you as soon as we can. 
+                        Whether it's about our fresh catch, sustainability practices, 
+                        or just to say hello, we're happy to chat.
+                    </p>
                     <!-- contact form -->
                     <form method="post">
                         {{ contact_form | crispy }}
                         {% csrf_token %}
-                        <button class="btn btn-black" type="submit">Submit</button>
+                        <button class="btn btn-black mt-2 mb-4" type="submit">Submit</button>
                     </form>
                     </div>
                 </div>
