@@ -34,6 +34,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
+                 'localhost',
                  '.herokuapp.com']
 
 
@@ -192,6 +193,7 @@ STANDARD_DELIVERY_PERCENTAGE = 20
 STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv("STRIPE_PUBLIC_KEY", "")
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY", "")
+STRIPE_WH_SECRET = os.getenv("STRIPE_WH_SECRET", "")
 
 
 # Default primary key field type
