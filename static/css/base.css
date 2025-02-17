@@ -130,18 +130,6 @@ body {
     object-fit: cover;
 }
 
-/* ------------------------------- custom Styles Checkout Page */
-
-#payment-form {
-    background: #c2d6d6; 
-    border-radius: 5px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
-    backdrop-filter: blur(5px);
-    max-width: 800px;
-    margin: 15px auto;
-    padding: 5px;
-}
-
 /* ------------------------------- custom Styles About Page */
 
 .top-image {
