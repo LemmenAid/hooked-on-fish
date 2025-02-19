@@ -21,7 +21,6 @@ if os.path.isfile('env.py'):
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -79,6 +78,8 @@ MIDDLEWARE = [
     'allauth.account.middleware.AccountMiddleware',
 ]
 
+
+
 ROOT_URLCONF = 'hooked_on_fish.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -120,6 +121,7 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
+LOGOUT_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 

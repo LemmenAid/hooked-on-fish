@@ -42,7 +42,7 @@
                 <!-- Image -->
                 <div class="col-md-6 order-2 text-center">
                     <div class="top-image-container mt-2">
-                        {% if "placeholder" in grounds.profile_image.url %}
+                        {% if "placeholder" in grounds.grounds_image.url %}
                         <img src="{% static 'images/grounds.jpg' %}" class="top-image" alt="placeholder image">
                         {% else %}
                         <img src="{{ grounds.grounds_image.url }}" class="top-image" alt="{{ grounds.title }}">
