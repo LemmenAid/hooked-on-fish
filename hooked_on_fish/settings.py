@@ -10,15 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+from pathlib import Path
 import os
+import dj_database_url
 if os.path.isfile('env.py'):
     import env
 
-import dj_database_url
-from pathlib import Path
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,13 +28,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
-# SECURITY WARNING: don't run with debug turned on in production!
+
+# Explicitly set DEBUG to True
 DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 '.herokuapp.com',
-                 'hooked-on-fish-85d55f56e378.herokuapp.com']
+                 '.herokuapp.com',]
 
 
 # Application definition
@@ -72,6 +69,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -144,13 +142,19 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else: 
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
     }
+
+#CSRF_TRUSTED_ORIGINS = [
+#    "https://*.codeinstitute-ide.net/",
+#    "https://*.herokuapp.com"
+#]
+
 
 
 # Password validation
@@ -191,9 +195,18 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Cloudinary Storage
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
+
+CLOUDINARY_URL = os.getenv("CLOUDINARY_URL")
+
+if not CLOUDINARY_URL:
+    raise ValueError("CLOUDINARY_URL is not set in environment variables!")
 
 # Stripe
 FREE_DELIVERY_THRESHOLD = 50
@@ -209,3 +222,8 @@ DEFAULT_FROM_EMAIL = 'hookedonfish.email@gmail.com'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+print(f"DEBUG is set to: {DEBUG}")
+print(f"ALLOWED_HOSTS is set to: {ALLOWED_HOSTS}")
+print(f"CLOUDINARY_URL is set to: {CLOUDINARY_URL}")
