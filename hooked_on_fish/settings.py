@@ -222,8 +222,3 @@ DEFAULT_FROM_EMAIL = 'hookedonfish.email@gmail.com'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-print(f"DEBUG is set to: {DEBUG}")
-print(f"ALLOWED_HOSTS is set to: {ALLOWED_HOSTS}")
-print(f"CLOUDINARY_URL is set to: {CLOUDINARY_URL}")

@@ -43,9 +43,9 @@
                 <div class="col-md-6 order-2 text-center">
                     <div class="top-image-container mt-2">
                         {% if "placeholder" in about.profile_image.url %}
-                        <img src="{% static 'images/about.jpg' %}" class="top-image" alt="placeholder image">
+                        <img src="{% static 'images/about.webp' %}" class="top-image" alt="placeholder image">
                         {% else %}
-                        <img src="{{ about.profile_image.url }}" class="top-image" alt="{{ about.title }}">
+                        <img src="{{ about.about_image.url }}" class="top-image" alt="{{ about.title }}">
                         {% endif %}
                     </div>
                 </div>

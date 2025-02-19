@@ -45,7 +45,7 @@
                         {% if "placeholder" in grounds.profile_image.url %}
                         <img src="{% static 'images/grounds.jpg' %}" class="top-image" alt="placeholder image">
                         {% else %}
-                        <img src="{{ grounds.profile_image.url }}" class="top-image" alt="{{ grounds.title }}">
+                        <img src="{{ grounds.grounds_image.url }}" class="top-image" alt="{{ grounds.title }}">
                         {% endif %}
                     </div>
                 </div>
