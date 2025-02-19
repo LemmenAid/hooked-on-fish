@@ -1,1 +1,1 @@
-web: gunicorn hooked_on_fish.wsgi
+web: gunicorn hooked_on_fish.wsgi:application

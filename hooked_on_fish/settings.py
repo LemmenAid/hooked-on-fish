@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import os
 if os.path.isfile('env.py'):
     import env
-    
+
+import dj_database_url
 from pathlib import Path
 import cloudinary
 import cloudinary.uploader
@@ -35,7 +36,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 '.herokuapp.com']
+                 '.herokuapp.com',
+                 'hooked-on-fish-85d55f56e378.herokuapp.com']
 
 
 # Application definition
@@ -138,12 +140,17 @@ WSGI_APPLICATION = 'hooked_on_fish.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else: 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
