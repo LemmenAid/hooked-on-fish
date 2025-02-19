@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("about/", include("about.urls"), name="about-urls"),
+    path("about/", include("about.urls")),
     path('accounts/', include('allauth.urls')),
     path('admin/', admin.site.urls),
     path('bag/', include('bag.urls')),
@@ -30,4 +30,4 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('summernote/', include('django_summernote.urls')),
     path('', include('home.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

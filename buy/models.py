@@ -8,7 +8,7 @@ class BuyOnline(models.Model):
     the Buy Online page of the website.
     It includes fields for the title, profile image,
     content, and an updated timestamp.
-    The profile image is stored using Cloudinary for media management.
+    The about image is stored using Cloudinary for media management.
     """
     title = models.CharField(max_length=200)
     profile_image = CloudinaryField('image', default='placeholder')
@@ -25,7 +25,7 @@ class BuyInPerson(models.Model):
     the Buy in Person page of the website.
     It includes fields for the title, profile image,
     content, and an updated timestamp.
-    The profile image is stored using Cloudinary for media management.
+    The grounds image is stored using Cloudinary for media management.
     """
     title = models.CharField(max_length=200)
     profile_image = CloudinaryField('image', default='placeholder')
