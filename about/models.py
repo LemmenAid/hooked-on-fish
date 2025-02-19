@@ -11,7 +11,7 @@ class About(models.Model):
     The profile image is stored using Cloudinary for media management.
     """
     title = models.CharField(max_length=200)
-    about_image = CloudinaryField('image', default='placeholder')
+    profile_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
 
@@ -28,7 +28,7 @@ class Grounds(models.Model):
     The profile image is stored using Cloudinary for media management.
     """
     title = models.CharField(max_length=200)
-    grounds_image = CloudinaryField('image', default='placeholder')
+    profile_image = CloudinaryField('image', default='placeholder')
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField()
 
