@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 
 # Explicitly set DEBUG to True
-DEBUG = 'DEVELOPMENT' in os.environ
+#DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
