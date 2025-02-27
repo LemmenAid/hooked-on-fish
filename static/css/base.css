@@ -397,14 +397,14 @@ body {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-5,
-    .btn.btn-black.rounded-5 {
-        padding: .375rem .375rem;
-    }
-
     .btn.btn-outline-black.rounded-5.btn-lg,
     .btn.btn-black.rounded-5.btn-lg {
         padding: .375rem .375rem;
+        font-size: 1rem;
+    }
+
+    .btn-sm.btn-outline-black.rounded-5,
+    .btn-sm.btn-black.rounded-5 {
         font-size: 1rem;
     }
 
