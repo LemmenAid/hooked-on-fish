@@ -35,4 +35,4 @@ urlpatterns = [
 ]
 
 
-handler404 = 'boutique_ado.views.handler404'
+handler404 = 'hooked_on_fish.views.handler404'
