@@ -191,6 +191,14 @@ body {
     font-weight: bolder;
 }
 
+/* ------------------------------- MailChimp */
+
+#mc_embed_signup {
+    background:#ffffff00;
+    clear:left; 
+    max-width: 600px;
+}
+
 
 /* ------------------------------- bootstrap toasts */
 
