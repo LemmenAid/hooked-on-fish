@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 from .models import BuyOnline, BuyInPerson
 
 
@@ -53,4 +52,3 @@ def buy_in_person(request):
         {"buy_in_person": buy_in_person,
          "no_buy_in_person_content": not buy_in_person},
     )
-
