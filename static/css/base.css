@@ -142,21 +142,6 @@ body {
 
 /* ------------------------------- custom Styles Contact Page */
 
-.top-contact-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.top-contact-image {
-    object-fit: cover;
-    height: auto;
-    max-height: 350px;
-    max-width: 100%;
-    display: block;
-}
-
 .contact-form-container {
     background: #ffffffcc; 
     border-radius: 5px; 
