@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /checkout/
+Sitemap: https://hooked-on-fish-85d55f56e378.herokuapp.com/sitemap.xml
