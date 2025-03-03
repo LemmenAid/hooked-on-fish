@@ -1,11 +1,11 @@
 <script type="text/javascript">
 
-    // Disable +/- buttons outside 1-49 range
+    // Disable +/- buttons outside 1-20 range
     function handleEnableDisable(itemId) {
         $(`.qty_input[data-item_id="${itemId}"]`).each(function () {
             var currentValue = parseInt($(this).val());
             var minusDisabled = currentValue < 2;
-            var plusDisabled = currentValue > 39;
+            var plusDisabled = currentValue > 19;
 
             // Disable all matching decrement and increment buttons
             $(`.decrement-qty[data-item_id="${itemId}"]`).prop('disabled', minusDisabled);
@@ -25,6 +25,20 @@
         handleEnableDisable(itemId);
     });
 
+    // Prevent users from typing numbers outside the allowed range
+    $('.qty_input').on('input', function () {
+        var itemId = $(this).data('item_id');
+        var currentValue = parseInt($(this).val());
+
+        if (currentValue < 2) {
+            $(this).val(1);
+        } else if (currentValue > 19) {
+            $(this).val(20);
+        }
+
+        handleEnableDisable(itemId);
+    });
+
     // Increment quantity
     $('.increment-qty').click(function (e) {
         e.preventDefault();
@@ -33,7 +47,9 @@
         // Update all input fields for the same item
         $(`.qty_input[data-item_id="${itemId}"]`).each(function () {
             var currentValue = parseInt($(this).val());
-            $(this).val(currentValue + 1);
+            if (currentValue < 20) { 
+                $(this).val(currentValue + 1);
+            }
         });
 
         handleEnableDisable(itemId);
@@ -47,7 +63,9 @@
         // Update all input fields for the same item
         $(`.qty_input[data-item_id="${itemId}"]`).each(function () {
             var currentValue = parseInt($(this).val());
-            $(this).val(currentValue - 1);
+            if (currentValue > 1) { 
+                $(this).val(currentValue - 1);
+            }
         });
 
         handleEnableDisable(itemId);
