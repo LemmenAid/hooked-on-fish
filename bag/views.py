@@ -21,17 +21,33 @@ def add_to_bag(request, item_id):
     try:
         quantity = int(request.POST.get('quantity'))
     except ValueError:
+        messages.error(request, "Invalid quantity entered.")
         return redirect('view_bag')
 
     if item_id in list(bag.keys()):
-        bag[item_id] += quantity
-        messages.success(
-            request,
-            f'Updated {product.name} quantity to {bag[item_id]}'
-        )
+        new_quantity = bag[item_id] + quantity
+        if new_quantity > 20:
+            bag[item_id] = 20  # Cap at 20
+            messages.warning(
+                request,
+                f"Maximum quantity for {product.name} is 20. Quantity set to 20."
+            )
+        else:
+            bag[item_id] = new_quantity
+            messages.success(
+                request,
+                f"Updated {product.name} quantity to {bag[item_id]}."
+            )
     else:
-        bag[item_id] = quantity
-        messages.success(request, f'Added {product.name} to your bag')
+        if quantity > 20:
+            bag[item_id] = 20
+            messages.warning(
+                request,
+                f"Maximum quantity for {product.name} is 20. Quantity set to 20."
+            )
+        else:
+            bag[item_id] = quantity
+            messages.success(request, f"Added {product.name} to your bag.")
 
     request.session['bag'] = bag
     return redirect(redirect_url)
@@ -46,7 +62,8 @@ def adjust_bag(request, item_id):
     try:
         quantity = int(request.POST.get('quantity'))
     except ValueError:
-        return redirect(reverse('view_bag'))  # Do nothing and redirect
+        messages.error(request, "Invalid quantity entered.")
+        return redirect(reverse('view_bag'))
 
     if quantity > 0:
         bag[item_id] = quantity
