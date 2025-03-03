@@ -2,7 +2,6 @@ from django.shortcuts import (
     render, redirect, reverse, HttpResponse, get_object_or_404
 )
 from django.contrib import messages
-
 from products.models import Product
 
 
@@ -16,9 +15,13 @@ def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     bag = request.session.get('bag', {})
+
+    try:
+        quantity = int(request.POST.get('quantity'))
+    except ValueError:
+        return redirect('view_bag')
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
@@ -38,8 +41,12 @@ def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
     product = get_object_or_404(Product, pk=item_id)
-    quantity = int(request.POST.get('quantity'))
     bag = request.session.get('bag', {})
+
+    try:
+        quantity = int(request.POST.get('quantity'))
+    except ValueError:
+        return redirect(reverse('view_bag'))  # Do nothing and redirect
 
     if quantity > 0:
         bag[item_id] = quantity
@@ -48,7 +55,7 @@ def adjust_bag(request, item_id):
             f'Updated {product.name} quantity to {bag[item_id]}'
         )
     else:
-        bag.pop(item_id)
+        bag.pop(item_id, None)  # Use .pop with default to avoid KeyError
         messages.success(request, f'Removed {product.name} from your bag')
 
     request.session['bag'] = bag

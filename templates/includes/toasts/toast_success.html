@@ -17,7 +17,8 @@
             </div>
         </div>
 
-        {% if grand_total and not on_profile_page %}
+        {% if grand_total %}
+        {% if "Updated" in message|stringformat:"s" or "Added" in message|stringformat:"s" or "Removed" in message|stringformat:"s" %}
             <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
                 {% for item in bag_items %}
@@ -55,6 +56,7 @@
                     </a>
                 </div>
             </div>
+        {% endif %}
         {% endif %}
     </div>
 </div>
