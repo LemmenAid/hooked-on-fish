@@ -18,6 +18,7 @@
         </div>
 
         {% if grand_total %}
+        <!-- borrowed extra if statement from https://github.com/elainebroche-dev/pf5-iomha-prints -->
         {% if "Updated" in message|stringformat:"s" or "Added" in message|stringformat:"s" or "Removed" in message|stringformat:"s" %}
             <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
             <div class="bag-notification-wrapper">
