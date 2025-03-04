@@ -87,6 +87,7 @@
                                 </div>
                             </a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -100,8 +101,19 @@
                     {% include 'includes/mobile-top-header.html' %}
                     {% include 'includes/main-nav.html' %}
                 </nav>
+                <div class="row ms-auto text-end w-100 justify-content-end">
+                {% if request.user.is_authenticated %}
+                    <p class="p-message">You are logged in.</p>
+                    {% else %}
+                    <p class="p-message">You are not logged in</p>
+                {% endif %}
+                </div>
             </div>
+            
         </header>
+        
+        
+        
 
         {% if messages %}
             <div class="message-container">
