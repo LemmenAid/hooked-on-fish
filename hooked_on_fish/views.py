@@ -1,10 +1,10 @@
 from django.shortcuts import render
 from django.core.exceptions import BadRequest, PermissionDenied
-from django.http import HttpResponse
+from django.http import HttpResponseServerError
 
 
 def test_error(request):
-    return HttpResponse(status=500) # test 500 error
+    return HttpResponseServerError(status=500) # test 500 error
     # raise BadRequest # test 400 error
     # raise PermissionDenied # test 403 error
 
