@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import BuyOnline, BuyInPerson
+from .models import BuyOnline, BuyInPerson, PartnerShop
+
+admin.site.register(PartnerShop)
 
 
 @admin.register(BuyOnline)

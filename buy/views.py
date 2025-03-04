@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import BuyOnline, BuyInPerson
+from .models import BuyOnline, BuyInPerson, PartnerShop
 
 
 def buy_online(request):
@@ -36,12 +36,16 @@ def buy_in_person(request):
     **Context**
     ``in_person``
         The most recent instance of :model:`buy_in_person.BuyInPerson`.
+    ``partner_shops``
+        The list of :model:`buy_in_person.PartnerShop` associated with `buy_in_person`.
+
 
     **Template:**
     :template:`buy/buy_in_person.html`
     """
     buy_in_person = BuyInPerson.objects.all().order_by('-updated_on').first()
 
+    partner_shops = PartnerShop.objects.filter(buy_in_person=buy_in_person) if buy_in_person else []
     # If no About object exists, provide a fallback message
     if not buy_in_person:
         buy_in_person = None
@@ -49,6 +53,9 @@ def buy_in_person(request):
     return render(
         request,
         "buy/buy_in_person.html",
-        {"buy_in_person": buy_in_person,
-         "no_buy_in_person_content": not buy_in_person},
+        {
+            "buy_in_person": buy_in_person,
+            "no_buy_in_person_content": not buy_in_person,
+            "partner_shops": partner_shops,
+        },
     )

@@ -30,6 +30,24 @@
                             {{ buy_in_person.content | safe }}
                         </div>
                     {% endif %}
+                    
+                    <!-- Partner Shops List -->
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <h3 class="mb-3">Our Partner shops:</h3>
+                            <ul class="list-unstyled partners">
+                                {% for shop in partner_shops %}
+                                    <li class="mb-2">
+                                        <a href="{{ shop.website }}" target="_blank" rel="noopener noreferrer">
+                                            {{ shop.name }}
+                                        </a>
+                                    </li>
+                                {% empty %}
+                                    <p>No partner shops available at the moment.</p>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Image -->
@@ -43,5 +61,6 @@
                     </div>
                 </div>
             </div>
+
         </div>
 {% endblock content %}

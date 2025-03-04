@@ -34,3 +34,18 @@ class BuyInPerson(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class PartnerShop(models.Model):
+    """
+    This model stores details about partner shops that sell Hooked on Fish products.
+    """
+    name = models.CharField(max_length=255)
+    address = models.TextField()
+    website = models.URLField(blank=True, null=True)
+    buy_in_person = models.ForeignKey(
+        BuyInPerson, on_delete=models.CASCADE, related_name="partner_shops"
+    )
+
+    def __str__(self):
+        return self.name
