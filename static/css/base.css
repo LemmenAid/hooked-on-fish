@@ -36,9 +36,17 @@ body {
 /* ------------------------------ Buttons */
 
 .shop-now-button {
-    background: #0d0d0d;
+    background: #006763e8;
+    color: #fff;
+    letter-spacing: 1px;
+    min-width: 200px;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus {
+    background: #0d0d0d; 
     color: white;
-    min-width: 260px;
 }
 
 .complete-button {
@@ -64,9 +72,6 @@ body {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -130,6 +135,22 @@ body {
     object-fit: cover;
 }
 
+/* ------------------------------- custom Styles Home Page */
+
+.home-info {
+    padding: 20px 0;
+    background-color:#ffffffcc;
+    color: #252525;
+    border-radius: 5px;
+}
+
+.home-info p {
+    padding: 20px 30px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 0px !important;
+}
+
 /* ------------------------------- custom Styles About Page */
 
 .top-image {
@@ -145,6 +166,7 @@ body {
 .partners a {
     text-decoration: none;
     color: #252525;
+    font-size: .9rem;
 }
 
 .partners a:hover {
@@ -165,11 +187,11 @@ body {
 
 /* ------------------------------- Styles for Footer */
 .footer-container {
-    background-color:#ffffffcc;
+    background-color:#ffffffa6;
     color: #252525;
     max-width: 100%;
     margin-top: 80px;
-    border-top: 1px solid #c3c3c3;
+    border-top: 1px solid #ffffffa6;
 }
 
 .footer-logo a {
@@ -190,12 +212,11 @@ body {
 /* ------------------------------- MailChimp */
 
 #mc_embed_signup {
-    background:#ffffff00;
     clear:left; 
     max-width: 620px;
-    border: 1px solid #a4a4a4;
+    border: 1px solid #4d5b5ab0;
     border-radius: 5px;
-    background-color: #4d5b5a93;
+    background-color: #4d5b5ab0;
 }
 
 #mc_embed_signup h2 {
