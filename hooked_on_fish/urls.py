@@ -15,9 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from django.conf import settings
-# from django.conf.urls.static import static
-from .views import handler404
+from . import views
 
 
 urlpatterns = [
@@ -35,4 +33,7 @@ urlpatterns = [
 ]
 
 
-handler404 = 'hooked_on_fish.views.handler404'
+handler400 = 'hooked_on_fish.views.bad_request'
+handler403 = 'hooked_on_fish.views.permission_denied'
+handler404 = 'hooked_on_fish.views.page_not_found'
+handler500 = 'hooked_on_fish.views.server_error'
