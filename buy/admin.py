@@ -7,6 +7,7 @@ from .models import BuyOnline, BuyInPerson, PartnerShop
 class PartnerShopAdmin(admin.ModelAdmin):
     pass
 
+
 @admin.register(BuyOnline)
 class BuyOnlineAdmin(SummernoteModelAdmin):
     """

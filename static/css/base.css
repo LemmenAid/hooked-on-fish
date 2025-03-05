@@ -33,9 +33,13 @@ body {
     width: fit-content;
 }
 
-/* Padding for dropdown items in mobile navbar */
+/* for account dropdown items in mobile navbar */
 .dropdown-item {
-    padding: .25rem .8rem !important;
+    padding: .25rem .7rem !important;
+}
+
+.dropdown-menu {
+    background-color: #d3e2e1 !important;
 }
 
 /* ------------------------------ Buttons */

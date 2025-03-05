@@ -25,11 +25,15 @@
 
 _Hooked on Fish is a website for my final portfolio project with [Code Institute](https://codeinstitute.net/ie/)._
 
-Hooked on Fish is a website for a small-scale, sustainable seafood business based in Connemara, Galway, Ireland. The business is run by Thomas Flaherty, a local fisherman who catches fresh seafood daily—including mackerel, brown crab, lobster, scallops, and shrimp. The website serves as an online presence for the business, offering information about the catch, a direct way for customers to get in touch, and a place to stay updated on new products and market availability.
+Hooked on Fish is a website for a small-scale, sustainable seafood business based in Connemara, Galway, Ireland. The business is run by a local fisherman who catches fresh seafood daily—including mackerel, brown crab, lobster, scallops, and shrimp. 
+
+The website allows customers in the Connemara area to order fresh seafood online and have it delivered to their doorstep. It features a fully functional shopping bag and checkout system, integrated with Stripe for secure payments.
+
+Registered users can access their profile page, where they can view their order history and save delivery information for a smoother checkout experience. In addition to e-commerce functionality, the site serves as an online presence for the business, providing updates on the latest catch, product availability, and market locations.
 
 ### Project Purpose
 
-The purpose of Hooked on Fish is to create a digital storefront that reflects the business’s values—sustainability, transparency, and quality. The website connects local customers with fresh seafood while offering an inside look at the fishing process through blog updates and a newsletter called Fisherman’s Friends. It also serves as a foundation for expanding the business’s reach through local markets and direct sales.
+The purpose of Hooked on Fish is to create a digital storefront that reflects the business’s values—sustainability, transparency, and quality. The website connects local customers with fresh seafood while offering an inside look at the fishing process through a newsletter called Fisherman’s Friends. It also serves as a foundation for expanding the business’s reach through local markets and direct sales.
 
 ***
 
@@ -75,19 +79,23 @@ The homepage introduces Hooked on Fish with a striking hero image and a clear ca
 #### About Us Page
 The About page tells the story of Hooked on Fish, focusing on Thomas's experience as a fisherman, the boat Fortibus, and the business’s commitment to sustainable fishing practices.
 
-![About Us](README-files/about.png)
+![Who We Are](README-files/about.png)
+
+![Where We Fish](README-files/about-where.png)
 
 ***
 
 #### Products Page
 This page showcases the available seafood, providing descriptions and sustainability notes for each type of catch. The page is designed for easy future expansion into an e-commerce platform.
 
-![Features](README-files/products.png)
+![All Products](README-files/all-products.png)
+
+![Product Detail](README-files/product.png)
 
 ***
 
 #### Profile
-The personalized profile page provides logged-in members with an overview of their previous orders. It also allows them to save their delivery information or update that information. 
+The personalized profile page gives logged-in members a clear overview of their past orders. It also allows them to save and update their delivery information for a smoother checkout experience.
 
 ![Dashboard](README-files/profile.png)
 
@@ -96,37 +104,44 @@ The personalized profile page provides logged-in members with an overview of the
 #### Where to buy Pages
 On these pages, visitors can read information on where and how to buy the Hooked on Fish products.
 
-![Member Stories](README-files/buy.png)
+![Buy Online](README-files/buy-online.png)
+
+![Buy in Person](README-files/buy-person.png)
 
 ***
 
 #### CRUD for SuperUser
-A super user has full CRUD functionality for the products on the website.
+A superuser has full CRUD functionality to manage the products on the website.
 <br>
-<br>
-For users who are not logged in, the Save, Delete, and Comment options are not available.
-<br>
+For users who are not logged in, the Edit and Delete product options are not accessible.
 <hr>
 
 #### Products when logged in as a super user:
 ![Story](README-files/product-login.png)
 
-#### Products and comments when logged out:
-![Story](README-files/product-logout.png)
+#### Product Management page for a super user:
+![Story](README-files/product-edit.png)
 
 ***
 
 #### Contact Page
 A contact form allows customers to reach out with inquiries, whether they’re looking for specific seafood, bulk orders, or general information. The form includes a dropdown menu for users to select their inquiry type.
 
-![Create Story](README-files/create-story.png)
+![Contact](README-files/contact.png)
+
+***
+
+#### Sign-Up Page
+A page where users can register for an account on the Hooked on Fish website.
+
+![Sign Up](README-files/signup.png)
 
 ***
 
 #### Custom Error Handler Page
 Custom error pages to ensure user-friendly navigation, even in unexpected situations.
 
-![Sign Up](README-files/error-page.png)
+![Sign Up](README-files/custom-error.png)
 
 ***
 
@@ -238,32 +253,28 @@ Wireframes were created using Balsamiq to plan the site’s structure.
 <summary> Home Page
 </summary>
 
-![alt text](README-files/wireframe-main.png)<br>
-
+![alt text](README-files/wireframe-main.png)
 </details>
 
 <details>
 <summary> Text Pages
 </summary>
 
-![alt text](README-files/wireframe-text-page.png)<br>
-
+![alt text](README-files/wireframe-text-page.png)
 </details>
 
 <details>
 <summary> Products Page
 </summary>
 
-![alt text](README-files/wireframe-features.png)<br>
-
+![alt text](README-files/wireframe-products.png)
 </details>
 
 <details>
 <summary> Mobile View
 </summary>
 
-![alt text](README-files/mb-all-wireframe.png)<br>
-
+![alt text](README-files/wireframes-mb-view.png)
 </details>
 <br>
 
@@ -277,47 +288,12 @@ The database structure follows a relational model with key entities for products
 <summary> Entity Relationship Diagram (ERD)
 </summary>
 
-![Database Diagram](README-files/erd-diagram.png)
-
+![ERD Diagram](README-files/erd-diagram.png)
 </details>
-
 <br>
 
-#### 1. Profile Model
 
-Attributes:
-- Primary Key: Auto-generated by Django.
-- first_name (TextField)
-- last_name (TextField)
-- email (TextField, unique)<br>
-
-Purpose: 
-Stores basic user information and is extended by the User Profile model.
-
-
-#### 2. Product Model
-
-Attributes:
-- user (OneToOneField linked to User model)
-- saved_posts (ManyToManyField linked to Post model)
-
-Purpose: 
-User model for personalised dashboard, to include additional fields for saved posts.
-
-#### 3. Contact Model
-
-Attributes:
-- name (CharField, max length: 200)
-- email (EmailField)
-- garden_experience (CharField, max length: 20)
-- garden_zone (CharField, max length: 3)
-- message (TextField)
-- read (BooleanField)
-
-Purpose: 
-Captures contact form submissions, including garden-related queries.
-
-#### 6. About Model
+#### 1. About Model
 
 Attributes:
 - title (CharField)
@@ -325,14 +301,156 @@ Attributes:
 - content (TextField)
 - updated_on (DateTimeField)
 
-Purpose: 
-Represents content for the "About Us" page.
+Purpose:
+Represents content for the "About Us" page, storing text, images, and last update information.
 
-#### Relationships Overview:
-- One-to-One: User Profile extends User.
-- One-to-Many:
--- Product bought by users.
-- Many-to-Many: Users save multiple orders through the User Profile model.
+#### 2. Grounds Model
+
+Attributes:
+- title (CharField)
+- profile_image (CloudinaryField)
+- content (TextField)
+- updated_on (DateTimeField)
+
+Purpose:
+Stores details about the "Our Fishing Grounds" page, displaying information about the fishing locations.
+
+#### 3. BuyOnline Model
+
+Attributes:
+- title (CharField)
+- profile_image (CloudinaryField)
+- content (TextField)
+- updated_on (DateTimeField)
+
+Purpose:
+Holds details displayed on the "Buy Online" page, including images, descriptions, and updates.
+
+#### 4. BuyInPerson Model
+
+Attributes:
+- title (CharField)
+- profile_image (CloudinaryField)
+- content (TextField)
+- updated_on (DateTimeField)
+
+Purpose:
+Contains details for the "Buy in Person" page, listing locations where customers can purchase seafood.
+
+Relationships Overview:
+
+- One-to-Many: Related to the PartnerShop model.
+
+#### 5. PartnerShop Model
+
+Attributes:
+- name (CharField)
+- address (TextField)
+- website (URLField)
+- buy_in_person (ForeignKey → BuyInPerson)
+
+Purpose:
+Stores details of partner shops selling Hooked on Fish products, linking them to the BuyInPerson model.
+
+Relationships Overview:
+
+- Many-to-One: Linked to BuyInPerson (a shop belongs to a location where customers can buy seafood).
+
+#### 6. Order Model
+
+Attributes:
+- order_number (CharField)
+- user_profile (ForeignKey → UserProfile)
+- full_name (CharField)
+- email (EmailField)
+- phone_number (CharField)
+- country (CountryField)
+- postcode (CharField)
+- town_or_city (CharField)
+- street_address1 (CharField)
+- street_address2 (CharField)
+- county (CharField)
+- date (DateTimeField)
+- delivery_cost (DecimalField)
+- order_total (DecimalField)
+- grand_total (DecimalField)
+- original_bag (TextField)
+- stripe_pid (CharField)
+
+Purpose:
+Represents an order placed by a customer, storing details about their purchase, delivery, and payment.
+
+Relationships Overview:
+
+- One-to-Many: Related to the OrderLineItem model (each order has multiple items).
+- Many-to-One: Related to UserProfile (a user can have multiple orders).
+
+#### 7. OrderLineItem Model
+
+Attributes:
+- order (ForeignKey → Order)
+- product (ForeignKey → Product)
+- quantity (IntegerField)
+- lineitem_total (DecimalField)
+
+Purpose:
+Stores individual products within an order, tracking quantities and prices.
+
+Relationships Overview:
+
+- Many-to-One: Linked to Order (each order has multiple line items).
+- Many-to-One: Linked to Product (each line item corresponds to a product).
+
+#### 8. Contact Model
+
+Attributes:
+- name (CharField)
+- email (EmailField)
+- topic_choices (CharField with predefined choices)
+- referral_source (CharField with predefined choices)
+- message (TextField)
+- read (BooleanField)
+
+Purpose:
+Captures inquiries submitted via the contact form, including user details and the topic of their message.
+
+#### 9. Product Model
+
+Attributes:
+- sku (CharField)
+- name (CharField)
+- description (TextField)
+- caught_in_these_waters (CharField)
+- price (DecimalField)
+- image_url (CloudinaryField)
+- image (ImageField)
+
+Purpose:
+Represents products available for sale on the website, including seafood items and their details.
+
+Relationships Overview:
+
+- One-to-Many: Related to the OrderLineItem model (products are included in multiple orders).
+
+#### 10. UserProfile Model
+
+Attributes:
+- user (OneToOneField → User)
+- default_phone_number (CharField)
+- default_street_address1 (CharField)
+- default_street_address2 (CharField)
+- default_town_or_city (CharField)
+- default_county (CharField)
+- default_postcode (CharField)
+- default_country (CountryField)
+
+Purpose:
+Stores default delivery details and order history for registered users, enhancing their shopping experience.
+
+Relationships Overview:
+
+- One-to-One: Extends the built-in User model.
+- One-to-Many: Related to Order (users can have multiple orders).
 
 <br>
 

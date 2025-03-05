@@ -38,7 +38,8 @@ class BuyInPerson(models.Model):
 
 class PartnerShop(models.Model):
     """
-    This model stores details about partner shops that sell Hooked on Fish products.
+    This model stores details about partner shops
+    that sell Hooked on Fish products.
     """
     name = models.CharField(max_length=255)
     address = models.TextField()
