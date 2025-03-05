@@ -33,6 +33,10 @@ body {
     width: fit-content;
 }
 
+.dropdown-item {
+    padding: .25rem .8rem !important;
+}
+
 /* ------------------------------ Buttons */
 
 .shop-now-button {
