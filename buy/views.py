@@ -37,7 +37,8 @@ def buy_in_person(request):
     ``in_person``
         The most recent instance of :model:`buy_in_person.BuyInPerson`.
     ``partner_shops``
-        The list of :model:`buy_in_person.PartnerShop` associated with `buy_in_person`.
+        The list of :model:`buy_in_person.PartnerShop` 
+        associated with `buy_in_person`.
 
 
     **Template:**
@@ -45,7 +46,8 @@ def buy_in_person(request):
     """
     buy_in_person = BuyInPerson.objects.all().order_by('-updated_on').first()
 
-    partner_shops = PartnerShop.objects.filter(buy_in_person=buy_in_person) if buy_in_person else []
+    partner_shops = PartnerShop.objects.filter(
+        buy_in_person=buy_in_person) if buy_in_person else []
     # If no About object exists, provide a fallback message
     if not buy_in_person:
         buy_in_person = None

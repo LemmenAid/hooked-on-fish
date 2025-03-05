@@ -68,14 +68,16 @@ body {
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #252525;
+    background: #006764;
+    border: 1px solid #006764;
     color: white !important;
 }
 
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #0d0d0d;
+    background: #006764;
+    border: 1px solid #006764;
     color: white;
 }
 
@@ -170,7 +172,7 @@ body {
 }
 
 .partners a:hover {
-    color: #3aadd7;
+    color: #006764;
 } 
 
 /* ------------------------------- custom Styles Contact Page */
@@ -191,7 +193,7 @@ body {
     color: #252525;
     max-width: 100%;
     margin-top: 80px;
-    border-top: 1px solid #ffffffa6;
+    border-top: 1px solid #cacaca;
 }
 
 .footer-logo a {
@@ -205,7 +207,7 @@ body {
 }
 
 .footer-logo a:hover {
-    color: #3aadd7;
+    color: #006764;
     font-weight: bolder;
 }
 
@@ -222,6 +224,11 @@ body {
 #mc_embed_signup h2 {
     font-size: 1.2em !important;
     letter-spacing: 1.3px;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #006764 !important;
+    border: 1px solid #006764;
 }
 
 
