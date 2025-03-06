@@ -464,35 +464,43 @@ This schema efficiently organizes data to support Hooked on Fish' functionality,
 
 ![alt text](README-files/colour-palette.png)
 
-The colour scheme is kept very simple and clean. The few colours used drawn inspiration from the Connemara coastal landscape, and give a Fishermens feel.
+The color scheme is intentionally simple and clean. To maintain a clear and uncluttered design, I’ve used only a few shades of green-blue to add subtle color while keeping the reader’s focus on the content.
 
-Wanting to keep the design clean and clear, I have used only a few hues of blue for adding colour. Making sure the attention of the reader is mostly drawn to the content. <br>
-I have chosen a white neutral for the background and a deep charcoal for headers and accents to provide the necessary contrast, ensuring readability and accessible text elements without overwhelming the page.
+For the background, I chose a neutral white, complemented by deep charcoal for headers and accents. This contrast ensures readability and accessibility without overpowering the page.
 
 ### Typography
 
-The typography on Hooked on Fish is a clean sans-serif font, to create a modern clean feel. 
+The typography on Hooked on Fish features a clean, sans-serif font (Lato) to ensure a crisp, modern, and easily readable design. 
 
 The following code has been imported into the top of the base.html file:
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
 
-Roboto:<br>
-![alt text](README-files/roboto.png)<br>
+Lato:<br>
+![alt text](README-files/lato.png)<br>
 
 
 ### Imagery
 
 Several image sources were used for the images throughout the website.<br>
+All other photo's on the website are taken by me.
+<br>
 
 <details>
-<summary> The links to these sources are listed here:
+<summary> The links to the sourced images are listed here:
 </summary>
 
-* [Hero Image, FIsherman]()
+* [Home Page Image, Photo by Gaspar Zaldo from Pexels](https://www.pexels.com/photo/person-picking-spinners-in-a-small-container-6739268/)
 
-* Photo by : 
-* Photo by : 
+* [Kona-Mara Product Image, Photo by Kindel Media from Pexels](https://www.pexels.com/photo/silver-fish-in-white-plastic-container-8352392/)
+
+* [Crab Product Image, Photo by Kindel Media from Pexels](https://www.pexels.com/photo/person-holding-brown-crab-8351592/)
+
+* [Scallop Product Image, from Fishi Seafood](https://fishi.com.au/product/scallop/)
+
+* [Cod Product Image, from Marinel Seafood](https://marinel.com/en/saithe-pollock/)
+
+
 </details>
 
 *** 
@@ -517,7 +525,7 @@ Several image sources were used for the images throughout the website.<br>
 * [Am I Responsive?](https://ui.dev/amiresponsive) - Used to create an image of the website on various screen sizes.
 * [Heroku](https://www.heroku.com/) - Used for deploying the live project.
 * [Bootstrap](https://getbootstrap.com/) - Used to add style to the displayed pages
-* [ChatGPT](https://chat.openai.com/) - Used to create the blogs, member stories and about page.
+* [ChatGPT](https://chat.openai.com/) - Used to create the content for about page and where to buy pages.
 * [Code Beautify](https://codebeautify.org/) - Used to format HTML and CSS code.
 * [Clouidnary](https://cloudinary.com/) - Used to host images and integrate with django and the admin portal.
 
@@ -674,11 +682,10 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 I have taken inspiration and information from the following websites for Hooked on Fish:
 
-* [Garden Illustrated](https://www.gardensillustrated.com)
-* [RHS](https://www.rhs.org.uk/garden-inspiration/garden-types/coastal-gardens)
-* [Martha Stewart.com](https://www.marthastewart.com/)
-* [Gardenista](https://www.gardenista.com/)
-* [Gardening Know How](https://www.gardeningknowhow.com/garden-how-to/gardening-by-zone)
+* [The Good Fish Company](https://www.goodfish.ie/)
+* [The Seafood Cafe](https://theseafoodcafe.ie/)
+* [Kingfisher Fresh](https://kingfisherfresh.ie/)
+* [Pipers Farm](https://pipersfarm.com/)
 
 ***
 
@@ -688,23 +695,19 @@ The walkthrough project "Boutique Ado" was a great way of understanding how to g
 
 I have used various resources to help me with figuring out how to create the Hooked on Fish Website:
 
-
+* [Stripe](https://docs.stripe.com/get-started)
 * [Simple is better than Complex - for the dashboard](https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone)
 * [Harabat - for the dashboard](https://harabat.github.io/django-htmx/07_users_and_profiles/)
 * [Stackoverflow - create profile](https://stackoverflow.com/questions/61580144/django-create-profile-for-user-signal)
 * [Django Waves - one to one](https://djangowaves.com/resources/django-one-to-one-field/)
-* [Geeks for Geeks - add slug field inside model](https://www.geeksforgeeks.org/add-the-slug-field-inside-django-model/)
-* [MdBootstrap - for the footer](https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/)
-* [Stackoverflow - for the auto-dismiss alert](https://stackoverflow.com/questions/23101966/bootstrap-alert-auto-close)
-* [Get Bootstrap - for the auto-dismiss alert](https://getbootstrap.com/docs/5.0/components/alerts/)
-* [She Codes - for the auto-dismiss alert](https://www.shecodes.io/athena/8466-how-to-create-an-event-listener-to-alert-a-message)
 * [GitHub/CMed01 - for the custom error pages](https://github.com/CMed01/portfolio-milestone-4/tree/main)
+* [Django Project - class based views](https://docs.djangoproject.com/en/5.1/topics/class-based-views/intro/)
 * [Learn Django - for the custom error pages](https://learndjango.com/tutorials/customizing-django-404-and-500-error-pages)
 * [Django Docs - for automated testing](https://docs.djangoproject.com/en/5.1/topics/testing/overview/)
 * [The Mozilla Developer Network (MDN) - for automated testing](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
 * [YouTube - Mastering Django Unit Testing: An In-Depth Introduction and Tutorial](https://www.youtube.com/watch?v=N_HLNV2UQjg&t=1s)
 * [YouTube - Automated Test Basics - Python & Django](https://www.youtube.com/watch?v=6I_haJimhPY)
-
+* [ChatGPT- used as an accelerating learning tool](https://chat.openai.com/)
 * [Stack overflow](https://stackoverflow.com/)
 * [Pep Style Guide](https://peps.python.org/pep-0008/)
 * [W3Schools](https://www.w3schools.com/)

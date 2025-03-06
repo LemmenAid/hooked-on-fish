@@ -38,14 +38,10 @@ body {
     padding: .25rem .7rem !important;
 }
 
-.dropdown-menu {
-    background-color: #d3e2e1 !important;
-}
-
 /* ------------------------------ Buttons */
 
 .shop-now-button {
-    background: #006763e8;
+    background: #006764e8;
     color: #fff;
     letter-spacing: 1px;
     min-width: 200px;
@@ -70,8 +66,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #252525;
+    color: #0d0d0d !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #0d0d0d;
 }
 
 .btn-outline-black:hover,
@@ -105,7 +101,7 @@ body {
 }
 
 .text-black {
-    color: #000 !important;
+    color: #0d0d0d !important;
 }
 
 .border-black {
@@ -176,7 +172,7 @@ body {
 
 .partners a {
     text-decoration: none;
-    color: #252525;
+    color: #0d0d0d;
     font-size: .9rem;
 }
 
@@ -189,7 +185,7 @@ body {
 .contact-form-container {
     background: #ffffffcc; 
     border-radius: 5px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 10px #0000001a; 
     backdrop-filter: blur(5px);
     max-width: 800px;
     margin: 0 auto;
@@ -211,7 +207,7 @@ body {
     font-weight: 900;
     font-size: 1.5rem;
     letter-spacing: 1px;
-    color: #252525;
+    color: #0d0d0d;
     padding: 10px;
 }
 
@@ -264,7 +260,7 @@ body {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #0d0d0d;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -272,7 +268,7 @@ body {
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #00c0e1 !important;
 }
 
 .arrow-secondary {
@@ -280,11 +276,11 @@ body {
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 !important;
+    border-bottom-color: #00b58a !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #c84242 !important;
 }
 
 .arrow-warning {
@@ -360,7 +356,7 @@ body {
 }
 
 .allauth-form-inner-content a {
-	color: #006763; /* text-info */
+	color: #006764; /* text-info */
 }
 
 /* Product Form */
@@ -382,12 +378,12 @@ body {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 4;
-    border-color: #dc3545;
+    border-color: #c93434;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #c93434;
+    border-color: #c93434;
     border-radius: 5;
 }
 
