@@ -691,7 +691,7 @@ I have taken inspiration and information from the following websites for Hooked 
 
 ### Code
 
-The walkthrough project "Boutique Ado" was a great way of understanding how to get started on an full stack Django framework website and it was therefor a good source of inspiration. I have also used my fourth portfolio project [Coastal Gardens](https://github.com/LemmenAid/coastal-gardens/) as inspiration for this website. 
+The Boutique Ado walkthrough project provided a strong foundation for understanding how to build a full-stack website using the Django framework. It was an invaluable resource for learning key concepts such as handling authentication and integrating e-commerce functionality. Additionally, my fourth portfolio project, [Coastal Gardens](https://github.com/LemmenAid/coastal-gardens/) served as inspiration, particularly in structuring the site's content and enhancing user experience. Drawing from both projects, I was able to develop Hooked on Fish with a well-organized codebase, incorporating best practices in Django while tailoring the site to meet the unique needs of a seafood business.
 
 I have used various resources to help me with figuring out how to create the Hooked on Fish Website:
 
