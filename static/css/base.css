@@ -38,6 +38,10 @@ body {
     padding: .25rem .7rem !important;
 }
 
+.dropdown-menu a {
+    background-color: transparent !important;
+}
+
 /* ------------------------------ Buttons */
 
 .shop-now-button {
