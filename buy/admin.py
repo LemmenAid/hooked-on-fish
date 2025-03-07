@@ -5,15 +5,18 @@ from .models import BuyOnline, BuyInPerson, PartnerShop
 
 @admin.register(PartnerShop)
 class PartnerShopAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for the ParnerShop model.
+    """
     pass
 
 
 @admin.register(BuyOnline)
 class BuyOnlineAdmin(SummernoteModelAdmin):
     """
-    Admin configuration for the About model.
+    Admin configuration for the BuyOnline model.
 
-    This class customizes the admin interface for the About model by using
+    This class customizes the admin interface for the model by using
     the Summernote editor for the 'content' field.
 
     Attributes:
@@ -26,9 +29,9 @@ class BuyOnlineAdmin(SummernoteModelAdmin):
 @admin.register(BuyInPerson)
 class BuyInPersonAdmin(SummernoteModelAdmin):
     """
-    Admin configuration for the About model.
+    Admin configuration for the BuyInPerson model.
 
-    This class customizes the admin interface for the About model by using
+    This class customizes the admin interface for the model by using
     the Summernote editor for the 'content' field.
 
     Attributes:

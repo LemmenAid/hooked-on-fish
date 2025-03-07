@@ -3,11 +3,31 @@ from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    """
+    Admin configuration for OrderLineItem.
+
+    This inline admin allows OrderLineItem instances to be displayed
+    within the Order admin panel. The `lineitem_total` field is
+    set to readonly to prevent manual edits.
+    """
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for the Order model.
+
+    This class customizes the Order model's admin interface, including:
+    - Displaying OrderLineItem instances inline.
+    - Setting readonly fields to prevent modifications of key fields.
+    - Defining the order of fields in the detail view.
+    - Specifying fields to display in the order list.
+    - Ordering orders by most recent date.
+
+    Readonly fields ensure that financial and transactional data
+    remain consistent and protected from accidental changes.
+    """
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',

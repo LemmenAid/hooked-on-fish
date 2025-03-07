@@ -127,7 +127,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | --- | --- | --- |
 | admin.py | ![screenshot](TESTING-files/python-buy-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](TESTING-files/python-buy-apps.png) | Pass: No Errors |
-| forms.py | ![screenshot](TESTING-files/python-buy-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-buy-models.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-buy-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-buy-views.png) | Pass: No Errors |

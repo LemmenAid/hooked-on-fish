@@ -3,6 +3,21 @@ from .models import Order
 
 
 class OrderForm(forms.ModelForm):
+    """
+    Form for placing an order.
+
+    This form collects customer details necessary for processing an order,
+    including contact information and shipping address. It customizes
+    the default form behavior by:
+
+    - Adding placeholders for better user experience.
+    - Removing default labels for a cleaner UI.
+    - Applying a CSS class ('stripe-style-input') to all fields for styling.
+    - Setting autofocus on the 'full_name' field for easier navigation.
+
+    The 'country' field is excluded from having a placeholder,
+    as it may use a select dropdown.
+    """
     class Meta:
         model = Order
         fields = ('full_name', 'email', 'phone_number',

@@ -37,7 +37,7 @@ def buy_in_person(request):
     ``in_person``
         The most recent instance of :model:`buy_in_person.BuyInPerson`.
     ``partner_shops``
-        The list of :model:`buy_in_person.PartnerShop` 
+        The list of :model:`buy_in_person.PartnerShop`
         associated with `buy_in_person`.
 
 
