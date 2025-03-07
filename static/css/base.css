@@ -240,6 +240,11 @@ body {
     border: 1px solid #006764;
 }
 
+#mce-success-response {
+    color: #1ee9e3 !important;
+    text-transform: uppercase;
+}
+
 
 /* ------------------------------- bootstrap toasts */
 
@@ -270,7 +275,7 @@ body {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes */
 .arrow-primary {
     border-bottom-color: #00c0e1 !important;
 }
@@ -301,6 +306,10 @@ body {
 
 .arrow-dark {
     border-bottom-color: #343a40 !important;
+}
+
+.text-primary {
+    color: #006764 !important;
 }
 
 .bag-notification-wrapper {
