@@ -390,14 +390,14 @@ body {
 }
 
 .custom-checkbox .custom-control-label::before {
-    border-radius: 4;
+    border-radius: 4px;
     border-color: #c93434;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #c93434;
     border-color: #c93434;
-    border-radius: 5;
+    border-radius: 5px;
 }
 
 /* -------------------------------- Media Queries */
