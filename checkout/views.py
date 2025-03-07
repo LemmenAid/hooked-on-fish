@@ -19,6 +19,21 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """
+    Stores checkout-related data in the Stripe PaymentIntent metadata.
+
+    Updates an instance of :model:`stripe.PaymentIntent` with metadata
+    containing the user's shopping bag and save-info preference.
+
+    **Context**
+    - ``bag``: The contents of the shopping bag stored in the session.
+    - ``save_info``: The user's preference for saving checkout details.
+    - ``username``: The authenticated user making the request.
+
+    **Returns**
+    - :status:`200` if the metadata update is successful.
+    - :status:`400` with an error message if an exception occurs.
+    """
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY
@@ -35,6 +50,38 @@ def cache_checkout_data(request):
 
 
 def checkout(request):
+    """
+    Handles the checkout process, including order creation, payment intent,
+    and form validation.
+
+    Processes an instance of :model:`orders.Order` with its associated
+    :model:`orders.OrderLineItem` based on the user's shopping bag.
+
+    **Context**
+    - ``order_form``: An instance of :form:`orders.OrderForm` pre-filled with
+      user details if authenticated.
+    - ``stripe_public_key``: The public Stripe API key for payment processing.
+    - ``client_secret``: The client secret for the Stripe PaymentIntent.
+
+    **POST Request**
+    - Validates order form data and creates an order.
+    - Saves order details, including bag contents and Stripe payment ID.
+    - Creates order line items for each product in the shopping bag.
+    - Redirects to the checkout success page upon completion.
+    - Displays error messages if form validation or product lookup fails.
+
+    **GET Request**
+    - Retrieves shopping bag contents and calculates the total amount.
+    - Initializes a Stripe PaymentIntent.
+    - Pre-fills order form with user profile data if authenticated.
+    - Redirects to the products page if the shopping bag is empty.
+
+    **Returns**
+    - Renders :template:`checkout/checkout.html` with order form & Stripe.
+    - Redirects to :view:`checkout_success` upon successful order placement.
+    - Redirects to :view:`view_bag` if an issue occurs with a product.
+    - Redirects to :view:`products` if the shopping bag is empty.
+    """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -69,22 +116,22 @@ def checkout(request):
                     )
                     order_line_item.save()
                 except Product.DoesNotExist:
-                    messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
-                        "Please call us for assistance!")
-                    )
+                    messages.error(request, "One of the products in your bag \
+                                   wasn't found in our database. \
+                                   Please call us for assistance!")
                     order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double-check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
-            messages.error(request, "There's nothing in your bag at the moment")
+            messages.error(request, "Your bag is empty at the moment.")
             return redirect(reverse('products'))
 
         current_bag = bag_contents(request)
@@ -131,7 +178,24 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     """
-    Handle successful checkouts
+    Handles successful order completion and updates user profile information.
+
+    Retrieves an instance of :model:`orders.Order` based on the order number
+    and, if the user is authenticated, associates it with their
+    :model:`profiles.UserProfile`.
+
+    **Context**
+    - ``order``: The successfully processed instance of :model:`orders.Order`.
+
+    **Functionality**
+    - Fetches the completed order using the provided order number.
+    - If the user is authenticated, links the order to their profile.
+    - If `save_info` is enabled, updates the user's default shipping details.
+    - Displays a success message with the order number and confirmation email.
+    - Clears the shopping bag from the session after checkout.
+
+    **Returns**
+    - Renders :template:`checkout/checkout_success.html` with order details.
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)

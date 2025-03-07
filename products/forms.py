@@ -4,6 +4,12 @@ from .models import Product
 
 
 class ProductForm(forms.ModelForm):
+    """
+    Form for creating and updating Product instances.
+
+    Includes custom styling for form fields and a custom widget
+    for the image field.
+    """
 
     class Meta:
         model = Product

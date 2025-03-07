@@ -140,8 +140,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | apps.py | ![screenshot](TESTING-files/python-checkout-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-checkout-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-checkout-models.png) | Pass: No Errors |
+| signals.py | ![screenshot](TESTING-files/python-checkout-signals.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-checkout-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-checkout-views.png) | Pass: No Errors |
+| webhook_handler.py | ![screenshot](TESTING-files/python-checkout-wb-handler.png) | Pass: No Errors |
+| webhooks.py | ![screenshot](TESTING-files/python-checkout-webhooks.png) | Pass: No Errors |
 
 ***
 
@@ -160,12 +163,8 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 #### Validation For home App
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| admin.py | ![screenshot](TESTING-files/python-home-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](TESTING-files/python-home-apps.png) | Pass: No Errors |
-| forms.py | ![screenshot](TESTING-files/python-home-forms.png) | Pass: No Errors |
-| models.py | ![screenshot](TESTING-files/python-home-models.png) | Pass: No Errors |
 | tests.py | ![screenshot](TESTING-files/python-home-tests.png) | Pass: No Errors |
-| signals.py | ![screenshot](TESTING-files/python-home-signals.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-home-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-home-views.png) | Pass: No Errors |
 
@@ -186,7 +185,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 #### Validation For profiles App
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| admin.py | ![screenshot](TESTING-files/python-profiles-admin.png) | Pass: No Errors |
 | apps.py | ![screenshot](TESTING-files/python-profiles-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-profiles-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-profiles-models.png) | Pass: No Errors |

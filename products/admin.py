@@ -3,6 +3,12 @@ from .models import Product
 
 
 class ProductAdmin(admin.ModelAdmin):
+    """
+    Admin configuration for the Product model.
+
+    Defines the fields displayed in the admin panel and sets
+    the default ordering by product name.
+    """
     list_display = (
         'name',
         'sku',

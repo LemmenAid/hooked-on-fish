@@ -3,6 +3,13 @@ from .models import UserProfile
 
 
 class UserProfileForm(forms.ModelForm):
+    """
+    Form for updating user profile details.
+
+    - Excludes the `user` field from the form.
+    - Adds placeholders and custom styling to input fields.
+    - Removes default labels and sets autofocus on the first field.
+    """
     class Meta:
         model = UserProfile
         exclude = ('user',)
@@ -30,5 +37,6 @@ class UserProfileForm(forms.ModelForm):
                 else:
                     placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-            self.fields[field].widget.attrs['class'] = 'border-black rounded-5 profile-form-input'
+            self.fields[field].widget.attrs['class'] = (
+                'border-black rounded-5 profile-form-input')
             self.fields[field].label = False

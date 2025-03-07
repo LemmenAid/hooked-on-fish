@@ -10,7 +10,13 @@ from checkout.models import Order
 
 @login_required
 def profile(request):
-    """ Display the user's profile. """
+    """
+    Display and allow updates to the user's profile.
+
+    Retrieves the user's profile and displays their saved information
+    and past orders. If the request is a POST request, it attempts to
+    update the profile with the submitted form data.
+    """
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -19,7 +25,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request,
+                           'Update failed. Please ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
@@ -34,7 +41,15 @@ def profile(request):
     return render(request, template, context)
 
 
+@login_required
 def order_history(request, order_number):
+    """
+    Display the user's past order details.
+
+    Retrieves an order by its order number and informs the user
+    that this is a past order confirmation. The order details
+    are displayed using the checkout success template.
+    """
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
