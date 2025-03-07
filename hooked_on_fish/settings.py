@@ -31,8 +31,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['127.0.0.1',
                  'localhost',
-                 'hooked-on-fish-85d55f56e378.herokuapp.com',]
-
+                 'hooked-on-fish-85d55f56e378.herokuapp.com', ]
 
 # Application definition
 
@@ -91,7 +90,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',  # required by allauth
+                'django.template.context_processors.request',  # allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -149,20 +148,15 @@ else:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+ {'NAME':
+  'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
+ {'NAME':
+  'django.contrib.auth.password_validation.MinimumLengthValidator', },
+ {'NAME':
+  'django.contrib.auth.password_validation.CommonPasswordValidator', },
+ {'NAME':
+  'django.contrib.auth.password_validation.NumericPasswordValidator', },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

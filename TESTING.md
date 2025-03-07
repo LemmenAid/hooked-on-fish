@@ -90,11 +90,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 #### Validation For hooked_on_fish App
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| asgi.py | ![screenshot](TESTING-files/python-cg-asgi.png) | Pass: No Errors |
-| settings.py | ![screenshot](TESTING-files/python-cg-settings.png) | Pass: No Errors |
-| urls.py | ![screenshot](TESTING-files/python-cg-urls.png) | Pass: No Errors |
-| views.py | ![screenshot](TESTING-files/python-cg-views.png) | Pass: No Errors |
-| wsgi.py | ![screenshot](TESTING-files/python-cg-wsgi.png) | Pass: No Errors |
+| asgi.py | ![screenshot](TESTING-files/python-hof-asgi.png) | Pass: No Errors |
+| settings.py | ![screenshot](TESTING-files/python-hof-settings.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-hof-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-hof-views.png) | Pass: No Errors |
+| wsgi.py | ![screenshot](TESTING-files/python-hof-wsgi.png) | Pass: No Errors |
 
 ***
 
@@ -110,16 +110,38 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ***
 
-#### Validation For blog App
+#### Validation For bag App
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| admin.py | ![screenshot](TESTING-files/python-blog-admin.png) | Pass: No Errors |
-| apps.py | ![screenshot](TESTING-files/python-blog-apps.png) | Pass: No Errors |
-| forms.py | ![screenshot](TESTING-files/python-blog-forms.png) | Pass: No Errors |
-| models.py | ![screenshot](TESTING-files/python-blog-models.png) | Pass: No Errors |
-| tests.py | ![screenshot](TESTING-files/python-blog-tests.png) | Pass: No Errors |
-| urls.py | ![screenshot](TESTING-files/python-blog-urls.png) | Pass: No Errors |
-| views.py | ![screenshot](TESTING-files/python-blog-views.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-bag-apps.png) | Pass: No Errors |
+| contexts.py | ![screenshot](TESTING-files/python-bag-contexts.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-bag-tests.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-bag-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-bag-views.png) | Pass: No Errors |
+
+***
+
+#### Validation For buy App
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](TESTING-files/python-buy-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-buy-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](TESTING-files/python-buy-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](TESTING-files/python-buy-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-buy-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-buy-views.png) | Pass: No Errors |
+
+***
+
+#### Validation For checkout App
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](TESTING-files/python-checkout-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-checkout-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](TESTING-files/python-checkout-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](TESTING-files/python-checkout-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-checkout-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-checkout-views.png) | Pass: No Errors |
 
 ***
 
@@ -135,18 +157,41 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ***
 
-#### Validation For dashboard App
+#### Validation For home App
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| admin.py | ![screenshot](TESTING-files/python-db-admin.png) | Pass: No Errors |
-| apps.py | ![screenshot](TESTING-files/python-db-apps.png) | Pass: No Errors |
-| forms.py | ![screenshot](TESTING-files/python-db-forms.png) | Pass: No Errors |
-| models.py | ![screenshot](TESTING-files/python-db-models.png) | Pass: No Errors |
-| tests.py | ![screenshot](TESTING-files/python-dashboard-tests.png) | Pass: No Errors |
-| signals.py | ![screenshot](TESTING-files/python-db-signals.png) | Pass: No Errors |
-| urls.py | ![screenshot](TESTING-files/python-db-urls.png) | Pass: No Errors |
-| views.py | ![screenshot](TESTING-files/python-db-views.png) | Pass: No Errors |
+| admin.py | ![screenshot](TESTING-files/python-home-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-home-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](TESTING-files/python-home-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](TESTING-files/python-home-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-home-tests.png) | Pass: No Errors |
+| signals.py | ![screenshot](TESTING-files/python-home-signals.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-home-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-home-views.png) | Pass: No Errors |
 
+***
+
+#### Validation For products App
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](TESTING-files/python-products-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-products-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](TESTING-files/python-products-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](TESTING-files/python-products-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-products-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-products-views.png) | Pass: No Errors |
+
+***
+
+#### Validation For profiles App
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| admin.py | ![screenshot](TESTING-files/python-profiles-admin.png) | Pass: No Errors |
+| apps.py | ![screenshot](TESTING-files/python-profiles-apps.png) | Pass: No Errors |
+| forms.py | ![screenshot](TESTING-files/python-profiles-forms.png) | Pass: No Errors |
+| models.py | ![screenshot](TESTING-files/python-profiles-models.png) | Pass: No Errors |
+| urls.py | ![screenshot](TESTING-files/python-profiles-urls.png) | Pass: No Errors |
+| views.py | ![screenshot](TESTING-files/python-profiles-views.png) | Pass: No Errors |
 
 ***
 

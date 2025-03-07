@@ -212,6 +212,18 @@
             }(jQuery));
             var $mcj = jQuery.noConflict(true);
         </script>
+        
+        <!-- Auto-dismiss toasts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(function () {
+                    document.querySelectorAll('.toast').forEach(function (toastElement) {
+                        var bsToast = new bootstrap.Toast(toastElement);
+                        bsToast.hide(); // Properly hides the toast
+                    });
+                }, 4000);
+            });
+        </script>        
         {% endblock %} 
     </body>
 </html>

@@ -30,7 +30,7 @@ def add_to_bag(request, item_id):
             bag[item_id] = 20  # Cap at 20
             messages.warning(
                 request,
-                f"Maximum quantity for {product.name} is 20. Quantity set to 20."
+                f"Maximum quantity for {product.name} =20. Quantity set to 20."
             )
         else:
             bag[item_id] = new_quantity
@@ -43,7 +43,7 @@ def add_to_bag(request, item_id):
             bag[item_id] = 20
             messages.warning(
                 request,
-                f"Maximum quantity for {product.name} is 20. Quantity set to 20."
+                f"Maximum quantity for {product.name} =20. Quantity set to 20."
             )
         else:
             bag[item_id] = quantity
