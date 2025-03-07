@@ -200,7 +200,7 @@ To ensure that custom error pages (e.g., 400, 403, 404, and 500 errors) display 
 1. A temporary route was added in urls.py to trigger various error responses manually.
 2. The temporary test_error view raises specific exceptions or returns error status codes to simulate different error scenarios.<br>
 
-![Screenshot](TESTING-files/testing%20error%20pages..png)
+![Screenshot](TESTING-files/testingerrorpages.png)
 
 <br>
 
@@ -218,7 +218,7 @@ For the 404 test, a non-existent URL was accessed directly instead of using the 
 
 ### Browser Compatibility
 
-Coastal Gardens was tested through the Heroku app website on the following browsers without issues:  
+Hooked on Fish was tested through the Heroku app website on the following browsers without issues:  
 - Google Chrome (Version 132.0.6834.6) | Works as expected
 - Mozilla Firefox (Version 132.0) | Works as expected
 - Safari (Version 20619.2.8) | Works as expected
@@ -227,7 +227,7 @@ Coastal Gardens was tested through the Heroku app website on the following brows
 ***
 
 ### Responsiveness
-* The website has been tested on different devices(under which; iPhone SE / iPhone 12 / Samsung Galaxy S9 / MacBook Air / MacBook Pro / HP laptop).
+* The website has been tested on different devices(under which; iPhone SE / iPhone 12 / Samsung Galaxy S21 / MacBook Air / MacBook Pro / HP laptop).
 * The website was responsive on all screens from mobile phones to desktops.
 * Chrome DEV Tools have been used to check the responsivness throughout the development of the website.
 

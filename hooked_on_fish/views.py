@@ -4,9 +4,9 @@ from django.http import HttpResponseServerError
 
 
 # def test_error(request):
-     # return HttpResponseServerError(status=500)  # test 500 error
-     # raise BadRequest  # test 400 error
-     # raise PermissionDenied  # test 403 error
+    # return HttpResponse(status=500)  # test 500 error
+    # raise BadRequest  # test 400 error
+    # raise PermissionDenied  # test 403 error
 
 
 def bad_request(request, exception):
