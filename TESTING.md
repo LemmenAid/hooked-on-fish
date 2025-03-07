@@ -25,40 +25,33 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2F) | ![screenshot](TESTING-files/html-home.png) | Pass: No Errors |
-| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2F) | ![screenshot](TESTING-files/html-about.png) | Pass: No Errors |
-| About - Grounds | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2F) | ![screenshot](TESTING-files/html-about-grounds.png) | Pass: No Errors |
-| Zone - map | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2Fzone-map%2F) | ![screenshot](TESTING-files/html-zone.png) | Pass: No Errors |
-| Contact Us | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fcontact%2F) | ![screenshot](TESTING-files/html-contact.png) | Pass: No Errors |
-| Features | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Ffeatures%2F) | ![screenshot](TESTING-files/html-features.png) | Pass: No Errors |
-| Feature Story | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fthe-enchanting-irish-green-bells-moluccella-laevis%2F) | ![screenshot](TESTING-files/html-feature-story.png) | Pass: No Errors |
-| Dashboard | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F#textarea) | ![screenshot](TESTING-files/html-dashboard.png) | Pass: No Errors |
-| Member Story | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F#textarea) | ![screenshot](TESTING-files/html-memeber-stories.png) | Pass: No Errors |
-| Create Story | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F#textarea) | ![screenshot](TESTING-files/html-create.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2F) | ![screenshot](TESTING-files/html-home.png) | Pass: No Errors |
+| About | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fabout%2F) | ![screenshot](TESTING-files/html-about.png) | Pass: No Errors |
+| About - Grounds | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fabout%2Fgrounds%2F) | ![screenshot](TESTING-files/html-about-grounds.png) | Pass: No Errors |
+| All products | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fproducts%2F) | ![screenshot](TESTING-files/html-products.png) | Pass: No Errors |
+| Product detail | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fproducts%2F3%2F) | ![screenshot](TESTING-files/html-product-detail.png) | Pass: No Errors |
+| Buy Online | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fbuy%2Fonline%2F) | ![screenshot](TESTING-files/html-online.png) | Pass: No Errors |
+| Buy in Person | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fbuy%2Fin-person%2F) | ![screenshot](TESTING-files/html-inperson.png) | Pass: No Errors |
+| Contact | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fcontact%2F) | ![screenshot](TESTING-files/html-contact.png) | Pass: No Errors |
+| Product Management | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-management.png) | These errors appear to originate from code that was emplate-generated or framework-based code. As this code is part of a pre-existing structure and functions as intended, I have opted not to modify it. |
+| Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-profile.png) | Pass: No Errors |
 | Custom Error 400 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2F8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net%2Ftest-error%2F#textarea) | ![screenshot](TESTING-files/html-400.png) | Pass: No Errors |
 | Custom Error 403 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2F8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net%2Ftest-error%2F#textarea) | ![screenshot](TESTING-files/html-403.png) | Pass: No Errors |
 | Custom Error 404 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2F8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net%2Ftest-error%2F#textarea) | ![screenshot](TESTING-files/html-404.png) | Pass: No Errors |
 | Custom Error 500 | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2F8000-lemmenaid-coastalgarden-1k1wefnkeaf.ws.codeinstitute-ide.net%2Ftest-error%2F#textarea) | ![screenshot](TESTING-files/html-500.png) | Pass: No Errors |
-| Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](TESTING-files/html-login.png) | Pass: No Errors |
-| Logout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Flogin%2F#textarea) | ![screenshot](TESTING-files/html-logout.png) | Pass: No Errors |
-| Signup | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](TESTING-files/html-signup.png) | Errors explained below. |
+| Login | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](TESTING-files/html-login.png) | Pass: No Errors |
+| Logout | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-logout.png) | Pass: No Errors |
+| Signup | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Faccounts%2Fsignup%2F#l219c299) | ![screenshot](TESTING-files/html-signup.png) | Errors explained below. |
 
 <br>
-The following validation errors appear on the signup page when using Django allauth: 
+The following validation error appeared on the signup page when using Django allauth: 
 <br>
 <br>
 
-1. "End tag p implied, but there were open elements" 
-- This occurs because the default form rendering does not close < p > or < span > tags properly when rendering help text.
-
-2. "Unclosed element span" and "Stray end tag span" 
-- These errors are due to the way Django allauth handles help text within form fields. It wraps help text in < span > tags but does not ensure strict compliance with HTML validation rules.
-
-3. "No p element in scope but a p end tag seen" 
-- Django allauth uses < p > tags inconsistently, which causes this error when rendering form errors or help texts.
+"Element ul not allowed as child of element small in this context." 
+- This error was occured because a < ul > element was nested inside a < small > tag. This issue originates from how Django's crispy-forms library renders form errors by default. Since this is not code I have written manually but part of the third-party package’s default behavior, I have chosen to leave it as is, as it does not impact the website’s functionality.
 <br>
 
-These errors are caused by the default Django form rendering engine used by allauth, which generates the HTML automatically. While these issues do not affect functionality, fixing them would require overriding the templates or form rendering logic entirely.
 
 *** 
 
@@ -339,12 +332,14 @@ Below are the results from the various apps on my application that I've tested:
 
 ### Solved Bugs
 
-* During testing I replaced the Post.objects.get() line with get_object_or_404 in my save_post view. This ensures that if the Post with the given post_id does not exist, Django will return a 404 response instead of raising an exception.
+* During testing, I removed the type attribute from the < script > tags in the HTML files, as the HTML validator flagged it as unnecessary.
 
-* Added the 'status=1' filter in the user_dashboard view, to only include stories that are published in "Your Stories".
+* I updated the name attribute for the extra meta tag block on the product detail page to resolve an HTML validation error caused by duplicate name attributes in the base.html file.
+
+* I added a < ul > element to the mobile navigation in the HTML and removed the type attribute from JavaScript script tags in base.html to resolve validation errors.
+
+
 
 * During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
-
-* The else block of my create_stories_view was being executed every time the request method was GET, which ment that the error message from the view was added even when the user first visits the page (without having submitted the form/published the story). To fix this, I moved the error message handling to the part of the code where the form is checked for validity.
 
 ***
