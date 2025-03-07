@@ -27,6 +27,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2F) | ![screenshot](TESTING-files/html-home.png) | Pass: No Errors |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2F) | ![screenshot](TESTING-files/html-about.png) | Pass: No Errors |
+| About - Grounds | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2F) | ![screenshot](TESTING-files/html-about-grounds.png) | Pass: No Errors |
 | Zone - map | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fabout%2Fzone-map%2F) | ![screenshot](TESTING-files/html-zone.png) | Pass: No Errors |
 | Contact Us | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Fcontact%2F) | ![screenshot](TESTING-files/html-contact.png) | Pass: No Errors |
 | Features | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcoastal-gardens-e950c82335fb.herokuapp.com%2Ffeatures%2F) | ![screenshot](TESTING-files/html-features.png) | Pass: No Errors |
