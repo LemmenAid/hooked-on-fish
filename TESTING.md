@@ -33,6 +33,9 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Buy Online | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fbuy%2Fonline%2F) | ![screenshot](TESTING-files/html-online.png) | Pass: No Errors |
 | Buy in Person | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fbuy%2Fin-person%2F) | ![screenshot](TESTING-files/html-inperson.png) | Pass: No Errors |
 | Contact | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fcontact%2F) | ![screenshot](TESTING-files/html-contact.png) | Pass: No Errors |
+| Bag | [W3C](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fcontact%2F) | ![screenshot](TESTING-files/html-bag.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fcheckout%2Fcheckout_success%2FEAE37899F5244847AD8FEDE43A9AC043) | ![screenshot](TESTING-files/html-checkout.png) | Pass: No Errors |
+| Checkout Success | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fhooked-on-fish-85d55f56e378.herokuapp.com%2Fproducts%2F) | ![screenshot](TESTING-files/html-checkout-success.png) | Pass: No Errors |
 | Product Management | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-management.png) | These errors appear to originate from code that was emplate-generated or framework-based code. As this code is part of a pre-existing structure and functions as intended, I have opted not to modify it. |
 | Profile | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-profile.png) | Pass: No Errors |
 | Custom Error 400 | [W3C](https://validator.w3.org/nu/#textarea) | ![screenshot](TESTING-files/html-400.png) | Pass: No Errors |
@@ -67,19 +70,15 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
-I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files (the comments.js file, the contact-zone-map.js file and the javascript in the base.html file). After inserting /*jshint esversion: 6 */ at the top of the file no errors were returned apart from one undefined variable - bootstrap.
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files and js scripts on html pages. After inserting /*jshint esversion: 6 */ and /* global $ */  at the top of the validator file no errors were returned.
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| comments.js | ![screenshot](TESTING-files/js-comments.png) | One undefined variable "bootstrap" see below. |
-| contact-zone-map.js | ![screenshot](TESTING-files/js-contact-zone-map.png) | Pass: No Errors |
-| JavaScript in the base.html | ![screenshot](TESTING-files/js-base.png) | One undefined variable "bootstrap" see below. |
-
-
-One undefined variable "bootstrap".
-
-This appears when using Bootstrap's JavaScript components (like new bootstrap.Modal in the comments.js file.) because JSHint doesn't recognize the bootstrap object as a global variable, even though it is defined globally by the included Bootstrap JS file.
-This is a common issue with external libraries that define global variables. JSHint doesn't automatically detect these variables unless they are declared in the configuration.
+| script in bag.html | ![screenshot](TESTING-files/js-bag.png) | PASS |
+| stripe-elements.js | ![screenshot](TESTING-files/js-stripe-elements.png) | PASS  after inserting /* global Stripe */ |
+| Quantity input script in products app. | ![screenshot](TESTING-files/js-products-quantity-script.png) | PASS |
+| new image script in product html pages. | ![screenshot](TESTING-files/js-products-img-script.png) | PASS |
+| countryfield.js in profiles app | ![screenshot](TESTING-files/js-countryfield.png) | PASS |
 
 ***
 
@@ -88,7 +87,7 @@ This is a common issue with external libraries that define global variables. JSH
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files. No errors were returned:
 
 
-#### Validation For coastalgardens App
+#### Validation For hooked_on_fish App
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | asgi.py | ![screenshot](TESTING-files/python-cg-asgi.png) | Pass: No Errors |
