@@ -92,7 +92,6 @@
                                 </div>
                             </a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -107,18 +106,15 @@
                     {% include 'includes/main-nav.html' %}
                 </nav>
                 <div class="row ms-auto text-end w-100 justify-content-end">
+                <!-- personalised message to member -->
                 {% if request.user.is_authenticated %}
-                    <p class="p-message">You are logged in.</p>
+                    <p class="p-message">You are logged in as {{ user }}.</p>
                     {% else %}
                     <p class="p-message">You are not logged in.</p>
                 {% endif %}
                 </div>
-            </div>
-            
+            </div>         
         </header>
-        
-        
-        
 
         {% if messages %}
             <div class="message-container">
@@ -186,9 +182,23 @@
         </div>
 
         {% block postloadjs %}
+        <!-- Show toasts -->
         <script>
             $('.toast').toast('show');
         </script>
+
+        <!-- Auto-dismiss toasts -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                setTimeout(function () {
+                    document.querySelectorAll('.toast').forEach(function (toastElement) {
+                        var bsToast = new bootstrap.Toast(toastElement);
+                        bsToast.hide(); // Properly hides the toast
+                    });
+                }, 4000);
+            });
+        </script>      
+
         <!-- Mailchimp scripts -->
         <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
         <script>
@@ -211,19 +221,7 @@
                 ftypes[6]='text';
             }(jQuery));
             var $mcj = jQuery.noConflict(true);
-        </script>
-        
-        <!-- Auto-dismiss toasts -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                setTimeout(function () {
-                    document.querySelectorAll('.toast').forEach(function (toastElement) {
-                        var bsToast = new bootstrap.Toast(toastElement);
-                        bsToast.hide(); // Properly hides the toast
-                    });
-                }, 4000);
-            });
-        </script>        
+        </script>  
         {% endblock %} 
     </body>
 </html>

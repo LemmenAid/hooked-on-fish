@@ -79,6 +79,7 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | Quantity input script in products app. | ![screenshot](TESTING-files/js-products-quantity-script.png) | PASS |
 | new image script in product html pages. | ![screenshot](TESTING-files/js-products-img-script.png) | PASS |
 | countryfield.js in profiles app | ![screenshot](TESTING-files/js-countryfield.png) | PASS |
+| toast script in base.html | ![screenshot](TESTING-files/js-base.png) | PASS |
 
 ***
 
