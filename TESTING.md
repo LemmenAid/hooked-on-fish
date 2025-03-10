@@ -227,7 +227,7 @@ Hooked on Fish was tested through the Heroku app website on the following browse
 ***
 
 ### Responsiveness
-* The website has been tested on different devices(under which; iPhone SE / iPhone 12 / Samsung Galaxy S21 / MacBook Air / MacBook Pro / HP laptop).
+* The website has been tested on different devices(under which; iPhone SE / iPhone 12 / Samsung Galaxy S20 / MacBook Air / MacBook Pro / HP laptop).
 * The website was responsive on all screens from mobile phones to desktops.
 * Chrome DEV Tools have been used to check the responsivness throughout the development of the website.
 
@@ -241,12 +241,16 @@ Overall I am happy with the outcome. However, the Best Practices is significantl
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](TESTING-files/lh-home.png) | Some minor performance and accessibility warnings |
-| About | Desktop | ![screenshot](TESTING-files/lh-about.png) | Some minor accessibility warnings |
-| Features | Desktop | ![screenshot](TESTING-files/lh-features.png) | Some minor performance and accessibility  warnings |
+| Who We Are | Desktop | ![screenshot](TESTING-files/lh-about.png) | Some minor accessibility warnings |
+| Where We Fish | Desktop | ![screenshot](TESTING-files/lh-grounds.png) | Some minor accessibility warnings |
+| Buy Online | Desktop | ![screenshot](TESTING-files/lh-online.png) | Some minor performance and accessibility  warnings |
+| Buy in Person | Desktop | ![screenshot](TESTING-files/lh-inperson.png) | Some minor performance and accessibility  warnings |
+| All Products | Desktop | ![screenshot](TESTING-files/lh-products.png) | Some minor performance and accessibility  warnings |
+| Product Detail | Desktop | ![screenshot](TESTING-files/lh-product-detail.png) | Some minor performance and accessibility  warnings |
+| Shopping Bag | Desktop | ![screenshot](TESTING-files/lh-bag.png) | Some minor performance and accessibility  warnings |
+| Checkout | Desktop | ![screenshot](TESTING-files/lh-checkout.png) | Some minor performance and accessibility  warnings |
 | Contact Us | Desktop | ![screenshot](TESTING-files/lh-contact.png) | Some minor performance and accessibility warnings |
-| Dashboard | Desktop | ![screenshot](TESTING-files/lh-dashboard.png) | Some minor performance and accessibility warnings |
-| Create Story | Desktop | ![screenshot](TESTING-files/lh-create-story.png) | Some minor accessibility warnings |
-| Member Stories | Desktop | ![screenshot](TESTING-files/lh-member-stories.png) | Some minor performance and accessibility warnings |
+| Profile | Desktop | ![screenshot](TESTING-files/lh-profile.png) | Some minor performance and accessibility warnings |
 | Sign Up | Desktop | ![screenshot](TESTING-files/lh-signup.png) | Some minor performance and accessibility warnings |
 | Custom Error Pages | Desktop | ![screenshot](TESTING-files/lh-error-pages.png) | Some minor SEO and accessibility warnings |
 
