@@ -325,6 +325,13 @@ body {
     color: #2e2e2e !important;
 }
 
+.text-info {
+    color: #00424c !important;
+}
+
+.text-danger {
+    color: #7c0019 !important;
+}
 
 .bag-notification-wrapper {
     height: 100px;
