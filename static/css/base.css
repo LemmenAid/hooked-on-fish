@@ -312,6 +312,21 @@ body {
     color: #006764 !important;
 }
 
+.text-dark {
+    color: #2e2f30 !important;
+}
+
+.text-dark:hover {
+    text-decoration: underline;
+    font-size: larger;
+    color: #006764;
+}
+
+.text-muted { 
+    color: #363636 !important;
+}
+
+
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
