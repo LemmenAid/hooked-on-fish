@@ -194,12 +194,94 @@ I started with creating the User Stories. Then these stories were broken down in
 </details>
 
 <details>
+<summary> Milestones
+</summary>
+
+![User Story Template](README-files/milestones.png)
+</details>
+
+<details>
 <summary> Project Board
 </summary>
 
 ![Project Board](README-files/project-board.png)
 </details>
 <br>
+
+***
+
+### E-commerce Business Model
+
+Hooked on Fish operates on a Business-to-Customer (B2C) model, selling freshly caught seafood directly to individual customers. The focus is on simple, one-time transactions without the need for subscriptions.
+
+The website is still in its early development stages but already includes a newsletter system and social media integration to support marketing efforts.
+
+Social media, particularly platforms like Facebook, plays a key role in building a community around the business and increasing site traffic. Meanwhile, the Fisherman’s Friends newsletter keeps customers informed about fresh catches, special offers, market days, and other updates.
+
+***
+
+### Search Engine Optimization (SEO) & Social Media Marketing
+
+I’ve selected relevant keywords to improve search engine visibility and help users find Hooked on Fish more easily. These include a mix of short-tail (head terms) keywords for broad searches and long-tail keywords for more specific queries.
+
+<details>
+<summary> List of Keywords
+</summary>
+
+![User Story Template](README-files/keywords.png)
+</details>
+
+***
+
+### Sitemap
+
+I used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was created using my deployed site URL (https://hooked-on-fish-85d55f56e378.herokuapp.com/).
+
+Once the site was fully crawled, a
+[sitemap.xml](sitemap.xml) file was generated, which I downloaded and added to the repository.
+
+***
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /bag/
+Disallow: /checkout/
+Sitemap: https://hooked-on-fish-85d55f56e378.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+***
+
+### Social Media Marketing
+
+Building an engaged social media presence is a powerful way to drive traffic to the business site and increase sales. By actively participating in online communities and sharing relevant content, the brand can foster relationships with customers and enhance its visibility.
+
+Leveraging popular platforms like Facebook, which have a broad user base, helps maximize reach and attract potential customers. Regular updates, engaging posts, and direct interactions with followers contribute to a strong online presence, ultimately strengthening brand recognition and customer loyalty.
+
+I've created a Facebook business Page for Hooked on Fish.
+
+![screenshot](README-files/fb-mockup.png)
+
+***
+
+### Newsletter Marketing
+
+I have integrated a newsletter sign-up form into the application, allowing users to subscribe with their email addresses if they wish to receive updates and news. This provides an easy way for customers to stay informed about new products, special offers, and business updates.
+
+For convenience, users can unsubscribe at any time by following the link provided in their subscription confirmation email.
 
 ***
 
@@ -562,6 +644,49 @@ To obtain your own Cloudinary API key, create an account and log in.<br>
 On your Cloudinary Dashboard, you can copy your API Environment Variable.<br>
 Be sure to remove the CLOUDINARY_URL= as part of the API value; this is the key.
 
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://web-piano-academy-16cd779294ab.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or web-piano-academy
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+
 ### Heroku Deployment 
 
 The application was deployed to Heroku. In order to deploy, the following steps were taken:
@@ -727,6 +852,6 @@ I have used my own ReadMe of [Coastal Gardens](https://github.com/LemmenAid/coas
 Used for general guideline.
 * [Plant Factory - crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md?plain=1) - Especially for the Technologies Used, Testing sections and design sections.
 * [Visit Järbo - ClaudiaInSweden](https://github.com/ClaudiaInSweden/visit-jarbo/blob/main/README.md?plain=1) - General inspiration / guideline.
-* [Bushy Park Tennis CLub - LewisMDillon](https://github.com/LewisMDillon/bushy-park-tennis-club-ld) - Deployment section and TESTING.md.
+* [Web Piano Academy - LewisMDillon](https://github.com/LewisMDillon/web-piano-academy/blob/main/README.md) - Deployment section and parts of Agile development.
 * [Oasis Hotels - Marchopkins96](https://github.com/Marchopkins96/oasis-hotels) - General inspiration / guideline.
 * [GitHub Docs](https://docs.github.com/en)

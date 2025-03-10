@@ -220,6 +220,22 @@ body {
     font-weight: bolder;
 }
 
+.footer-social a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #0d0d0d;
+    padding: 10px;
+}
+
+.footer-social a:hover {
+    color: #006764;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 /* ------------------------------- MailChimp */
 
 #mc_embed_signup {
