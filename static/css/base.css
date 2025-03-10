@@ -319,11 +319,10 @@ body {
 .text-dark:hover {
     text-decoration: underline;
     font-size: larger;
-    color: #006764;
 }
 
 .text-muted { 
-    color: #363636 !important;
+    color: #2e2e2e !important;
 }
 
 
