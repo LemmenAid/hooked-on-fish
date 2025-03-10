@@ -58,7 +58,7 @@
                                     <div class="input-group">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn-sm btn-black rounded-5" 
-                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}" aria-label="decrement quantity button for product">
                                                 <span class="icon">
                                                     <i class="fas fa-minus"></i>
                                                 </span>
@@ -70,7 +70,7 @@
                                             id="id_qty_{{ product.id }}" style="min-width: 50px; max-width: 59px;">
                                         <div class="input-group-append">
                                             <button class="increment-qty btn-sm btn-black rounded-5"
-                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                                data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}" aria-label="increment quantity button for product">
                                                 <span class="icon">
                                                     <i class="fas fa-plus"></i>
                                                 </span>
@@ -81,13 +81,13 @@
                             </div>
 
                             <div class="col-12">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-5 mt-3">
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-5 mt-3" aria-label="keep shopping button">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-5 text-uppercase mt-3" value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-5 text-uppercase mt-3" value="Add to Bag" aria-label="add to bag button">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
