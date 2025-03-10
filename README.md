@@ -219,18 +219,17 @@ CUSTOMER
 7. As a customer, I want to easily add products to a cart, so I can purchase multiple items in one order.
 8. As a customer, I want to securely pay for my order online, so I can confidently complete my purchase.
 9. As a customer, I want to receive an order confirmation email, so I know my purchase has been successful.
-10. As a customer, I want to leave a review for the products I purchased, so I can share my experience.
 
 ADMIN
 
-11. As an admin, I want to add, edit, or remove seafood products, so the inventory stays up to date.
-12. As an admin, I want to manage customer orders, so I can ensure they are processed and delivered correctly.
+10. As an admin, I want to add, edit, or remove seafood products, so the inventory stays up to date.
+11. As an admin, I want to manage customer orders, so I can ensure they are processed and delivered correctly.
 
 MARKETING
 
-13. As a visitor, I want to subscribe to a newsletter, so I can stay updated on news and special offers.
-14. As a visitor, I want to follow the business on social media, so I can see updates and connect with the brand.
-15. As a visitor, I want to view recipes or cooking tips for seafood, so I can feel inspired to try new dishes.
+12. As a visitor, I want to subscribe to a newsletter, so I can stay updated on news and special offers.
+13. As a visitor, I want to follow the business on social media, so I can see updates and connect with the brand.
+14. As a visitor, I want to view recipes or cooking tips for seafood, so I can feel inspired to try new dishes.
 
 
 ***

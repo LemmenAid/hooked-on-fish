@@ -242,16 +242,16 @@ Overall I am happy with the outcome. However, the Best Practices is significantl
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](TESTING-files/lh-home.png) | Some minor performance and accessibility warnings |
 | Who We Are | Desktop | ![screenshot](TESTING-files/lh-about.png) | Some minor accessibility warnings |
-| Where We Fish | Desktop | ![screenshot](TESTING-files/lh-grounds.png) | Some minor accessibility warnings |
+| Where We Fish | Desktop | ![screenshot](TESTING-files/lh-grounds.png) | Some minor performance and accessibility warnings |
 | Buy Online | Desktop | ![screenshot](TESTING-files/lh-online.png) | Some minor performance and accessibility  warnings |
 | Buy in Person | Desktop | ![screenshot](TESTING-files/lh-inperson.png) | Some minor performance and accessibility  warnings |
 | All Products | Desktop | ![screenshot](TESTING-files/lh-products.png) | Some minor performance and accessibility  warnings |
-| Product Detail | Desktop | ![screenshot](TESTING-files/lh-product-detail.png) | Some minor performance and accessibility  warnings |
+| Product Detail | Desktop | ![screenshot](TESTING-files/lh-product-detail.png) | Some minor accessibility  warnings |
 | Shopping Bag | Desktop | ![screenshot](TESTING-files/lh-bag.png) | Some minor performance and accessibility  warnings |
-| Checkout | Desktop | ![screenshot](TESTING-files/lh-checkout.png) | Some minor performance and accessibility  warnings |
+| Checkout | Desktop | ![screenshot](TESTING-files/lh-checkout.png) | Some minor accessibility  warnings |
 | Contact Us | Desktop | ![screenshot](TESTING-files/lh-contact.png) | Some minor performance and accessibility warnings |
 | Profile | Desktop | ![screenshot](TESTING-files/lh-profile.png) | Some minor performance and accessibility warnings |
-| Sign Up | Desktop | ![screenshot](TESTING-files/lh-signup.png) | Some minor performance and accessibility warnings |
+| Sign Up | Desktop | ![screenshot](TESTING-files/lh-signup.png) | Some minor accessibility warnings |
 | Custom Error Pages | Desktop | ![screenshot](TESTING-files/lh-error-pages.png) | Some minor SEO and accessibility warnings |
 
 ***
@@ -265,55 +265,56 @@ Defensive programming was manually tested with the below user acceptance testing
 | Nav links | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| | Click on About link in navbar | Redirection to About page | Pass | |
-| | Click on Features link in navbar | Redirection to Features page | Pass | |
+| | Click on About / Who we are link in navbar | Redirection to About page | Pass | |
+| | Click on About / Where we Fish  link in navbar | Redirection to grounds page | Pass | |
+| | Click on Where to Buy / online link in navbar | Redirection to where to buy page | Pass | |
+| | Click on Where to Buy / in person link in navbar | Redirection to where to buy page | Pass | |
 | | Click on Contact link in navbar | Redirection to Contact Us page | Pass | |
 | | Click on Signup link in navbar | Redirection to Signup page | Pass | |
 | | Click on Login link in navbar | Redirection to Login page | Pass | |
 | | Click on Logout link in navbar | Log out & Redirection to Home page | Pass | |
-| | Click on Dashboard link in navbar | Redirection to Dashboard | Pass | |
-| | Click on Member Stories link in navbar | Redirection to Member Stories page | Pass | |
-| Features Page | | | | |
-| | Click on post container | Redirection to that post details page | Pass | |
-| | Click on post title | Redirection to that post details page | Pass | |
-| | Click on Pagination right arrow | Redirection to next pagination page | Pass | |
-| | Click on Pagination left arrow | Redirection to previous pagination page | Pass | |
-| Signup Page | | | | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Redirects user to personal dashboard | Pass |
+| | Click on Profile link in navbar | Redirection to Profile | Pass | |
+| | Click on All Products link in navbar | Redirection to All Products page | Pass | |
+| | Click on single Product link in navbar | Redirection to the Product page | Pass | |
+| All Products Page | | | | |
+| | Click on add to bag | adds product to bag | Pass | |
+| | Click on increment button | increments quantity | Pass | |
+| | Click on decrement button | decrements quantitiy | Pass | |
+| | Click on Product | Redirection to product detail page| Pass | |
+| Product detail Page | | | | |
+| | Click on add to bag | adds product to bag | Pass | |
+| | Click on keep shopping | Redirect back to products page | Pass | |
+| | Click on increment button | increments quantity | Pass | |
+| | Click on decrement button | decrements quantitiy | Pass | |
+| | Click on Product | Redirection to product detail page| Pass | |
+| Buy in Person Page | | | | |
+| | Hover over Partner shops | color change | Pass | |
+| | Click on Partner Shop | Redirects to Partner Shop website | Pass | |
 | Log In | | | | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to dashboard page | Pass | |
+| | Click Login button | Logs in user, Redirects user to home page | Pass |
 | Log Out | | | | |
 | | Click Logout button | Logs out user, Redirects user to home page | Pass |
-| Dashboard | | | | |
-| | Click on the saved posts | Redirects to that post | Pass | |
-| | Click on the create story button | Redirects to create story page | Pass | |
-| Create Story | | | | |
-| | upload photo - choose file button | able to upload photo from device | Pass | |
-| | add text to title field | add text | Pass | |
-| | add text to content field | add text | Pass | |
-| | add text to excerpt field | add text | Pass | |
-| | click publish story button | gives notification that story is waiting for approval (admin needs to approve to publish) | Pass | |
-| Member Stories Page | | | | |
-| | Click on post container | Redirection to that post details page | Pass | |
-| | Click on post title | Redirection to that post details page | Pass | |
-| | Click on Pagination right arrow | Redirection to next pagination page | Pass | |
-| | Click on Pagination left arrow | Redirection to previous pagination page | Pass | |
-| Story Delete Confirm | | | | |
-| | delete story button | button only visible to author of story | Pass | |
-| | Click on delete story button | Delete story, display confirmation modal with definite delete button | Pass | |
-| Comment section | | | | |
-| | Click on delete comment button | Delete comment, display confirmation modal with definite delete button | Pass | |
-| | Click on edit comment button | puts comment in add comment textfield to update | Pass | |
-| | Click update comment button | gives feedback message that comment is waiting for approval | Pass | |
-| | Add comment button | when not logged in add comment section not available | Pass | |
+| Profile | | | | |
+| | Click on the previous order | Redirects to overview of that previous order | Pass | |
+| | Click on update information button | Updates and saves new information | Pass | |
+| Shopping Bag Page | | | | |
+| | Click on keep shopping | Redirect back to products page | Pass | |
+| | Click on secure checkout | Redirect to checkout page | Pass | |
+| | Click on increment button | increments quantity | Pass | |
+| | Click on decrement button | decrements quantitiy | Pass | |
+| | Click on update button | updates quantitiy | Pass | |
+| | Click on delete button | deletes product from bag | Pass | |
+| Checkout Page | | | | |
+| | Fill out checkout form - asks for required field | Only able to checkoout after filling out required fields | Pass | |
+| | Click on checkout button | Redirection to checkout succes page | Pass | |
+| | Click on Adjust bag | Redirection back to Shopping Bag Page | Pass | |
+| Contact Us Page | | | | |
+| | Submit contact form | Only able to submit after filling out all the required field. | Pass | |
 | Site Navigations - Logged Out User | | | | |
 | | Navigate to any login required URL | Redirect to login page | Pass | |
 | Site buttons | | | | |
 | | Hover effect buttons | hover effect for buttons across the site the background colour change | Pass |
-| | feedback messages | After updating or deleting a comment as a user you get a feedback message. | Pass |
+| | feedback messages | After adding, updating or deleting a product as a user you get a feedback message. | Pass |
 | | messages disappear automatically | after 5 sec message appears it will automatically disappear. | Pass |
 
 ***
@@ -322,25 +323,18 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a Visitor, I want to browse feature articles on coastal gardening, so that I can learn more about gardening by the sea. | ![screenshot](TESTING-files/user-story-features.png) |
-| As a Visitor, I want to be able to view the plant zone map, so I can determine in which zone I live. | ![screenshot](TESTING-files/user-story-zone.png) |
-| As a Visitor, I want to read an About page to understand the purpose and mission of the site. | ![screenshot](TESTING-files/user-story-about.png) |
-| As a Visitor, I want to easily navigate to different sections of the site, so I can find relevant information quickly. | ![screenshot](TESTING-files/user-story-navigation.png) |
-| As a Visitor, I can see a paginated list of site feature posts so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot](TESTING-files/user-story-pagination.png)|
-| As a Potential Member, I want to view a sign-up page that explains the benefits of joining, so I know why I should become a member. | ![screenshot](TESTING-files/user-story-signup.png) |
-| As a Potential Member, I want a simple registration process, so I can quickly join the community. | ![screenshot](TESTING-files/user-story-signup2.png) |
-| As a Member, I want a personalised dashboard where I can save and view my favourite articles, so I can easily revisit them. | ![screenshot](TESTING-files/user-story-dashboard.png) |
-| As a Member, I want to see a list of all my comments in one place, so I can keep track of my participation. | ![screenshot](TESTING-files/user-story-comments.png) |
-| As a Member, I can see a paginated list of site Member Stories so that I see only the most up-to-date posts and can navigate to older posts if I wish | ![screenshot](TESTING-files/user-story-member-stories.png)|
-| As a Member, I want the ability to write and publish my own gardening stories, so I can share my experiences with other members. | ![screenshot](TESTING-files/user-story-create.png) |
-| As a Member, I want access to member-only stories, so I can learn from the experiences of other coastal gardeners. | ![screenshot](TESTING-files/user-story-member-story.png) |
-| As a Member, I can delete a story that I have written. | ![screenshot](TESTING-files/user-story-delete-story.png) |
-| As a Member, I can comment on stories and edit / delete these comments. | ![screenshot](TESTING-files/user-story-delete-edit-comments.png) |
-| As a Member, I can logout so that access to my account is stopped and my information is kept secure | ![screenshot](TESTING-files/user-story-logout.png) |
-| As an Member, I can login to the site so that I can access account-based functionalities and information | ![screenshot](TESTING-files/user-story-login.png) |
-| As an Admin, I can update select site content via a back-end interface so that I can add and remove content from the site, without engaging with the site's code. | ![screenshot](TESTING-files/user-story-admin1.png) |
-| As an Admin, I want to moderate comments, so I can ensure a respectful and constructive environment. | ![screenshot](TESTING-files/user-story-admin2.png) |
-| As an Admin, I want to manage user accounts, so I can assist with membership issues and maintain site quality. | ![screenshot](TESTING-files/user-story-admin3.png) |
+| 1. As a visitor, I want to easily understand the purpose of the website, so I can decide if I want to explore further. | ![screenshot](TESTING-files/user-story-1.png) |
+| 2. As a visitor, I want to see a clear and engaging homepage, so I feel drawn into the brand. | ![screenshot](TESTING-files/user-story-2.png) |
+| 3. As a visitor, I want to browse the available seafood products, so I can see what’s on offer. | ![screenshot](TESTING-files/user-story-3.png) |
+| 4. As a visitor, I want to know where the seafood is sourced from, so I can trust the authenticity of the product. | ![screenshot](TESTING-files/user-story-4.png) |
+| 5. As a visitor, I want to find contact details, so I can get in touch with the business for any questions. | ![screenshot](TESTING-files/user-story-5.png)|
+| 6. As a customer, I want to create an account, so I can save my details for future orders. | ![screenshot](TESTING-files/user-story-6.png) |
+| 7. As a customer, I want to easily add products to a cart, so I can purchase multiple items in one order. | ![screenshot](TESTING-files/user-story-7.png) |
+| 8. As a customer, I want to securely pay for my order online, so I can confidently complete my purchase. | ![screenshot](TESTING-files/user-story-8.png) |
+| 9. As a customer, I want to receive an order confirmation email, so I know my purchase has been successful. | ![screenshot](TESTING-files/user-story-9.png) |
+| 10. As an admin, I want to add, edit, or remove seafood products, so the inventory stays up to date. | ![screenshot](TESTING-files/user-story-10.png) ![screenshot](TESTING-files/user-story-10-2.png) |
+| 11. As an admin, I want to manage customer orders, so I can ensure they are processed and delivered correctly. | ![screenshot](TESTING-files/user-story-11.png) |
+| 12. As a visitor, I want to subscribe to a newsletter, so I can stay updated on news and special offers. | ![screenshot](TESTING-files/user-story-12.png) |
 
 ***
 
