@@ -200,7 +200,7 @@ To ensure that custom error pages (e.g., 400, 403, 404, and 500 errors) display 
 1. A temporary route was added in urls.py to trigger various error responses manually.
 2. The temporary test_error view raises specific exceptions or returns error status codes to simulate different error scenarios.<br>
 
-![Screenshot](TESTING-files/testingerrorpages.png)
+![Screenshot](TESTING-files/testing-error-pages.png)
 
 <br>
 
@@ -364,9 +364,9 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Blog | tests.py | 93% | ![screenshot](TESTING-files/automated-blog.png) |
 | About | tests.py | 100% | ![screenshot](TESTING-files/automated-about.png) |
-| Dashboard | tests.py | 99% | ![screenshot](TESTING-files/automated-dashboard.png) |
+| Bag | tests.py | 94% | ![screenshot](TESTING-files/automated-bag.png) |
+| Checkout | tests.py | 99% | ![screenshot](TESTING-files/automated-checkout.png) |
 
 ***
 
