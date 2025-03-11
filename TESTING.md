@@ -371,7 +371,7 @@ Below are the results from the various apps on my application that I've tested:
 | Checkout | tests.py | 70% | ![screenshot](TESTING-files/automated-checkout.png) |
 | Contact | tests.py | 99% | ![screenshot](TESTING-files/automated-contact.png) |
 | Home | tests.py | 100% | ![screenshot](TESTING-files/automated-home.png) |
-| Profiles | tests.py | 100% | ![screenshot](TESTING-files/automated-profiles.png) |
+| Profiles | tests.py | 97% | ![screenshot](TESTING-files/automated-profiles.png) |
 
 ***
 
