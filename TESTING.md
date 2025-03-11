@@ -368,7 +368,6 @@ Below are the results from the various apps on my application that I've tested:
 | --- | --- | --- | --- |
 | About | tests.py | 100% | ![screenshot](TESTING-files/automated-about.png) |
 | Bag | tests.py | 94% | ![screenshot](TESTING-files/automated-bag.png) |
-| Checkout | tests.py | 70% | ![screenshot](TESTING-files/automated-checkout.png) |
 | Contact | tests.py | 99% | ![screenshot](TESTING-files/automated-contact.png) |
 | Home | tests.py | 100% | ![screenshot](TESTING-files/automated-home.png) |
 | Profiles | tests.py | 97% | ![screenshot](TESTING-files/automated-profiles.png) |
@@ -383,8 +382,12 @@ Below are the results from the various apps on my application that I've tested:
 
 * I added a < ul > element to the mobile navigation in the HTML and removed the type attribute from JavaScript script tags in base.html to resolve validation errors.
 
+* When a user submitted the contact form with invalid data, the page reloaded with a fresh form, causing error messages to disappear instead of being displayed. This happened because the form was always reinitialized after a POST request, regardless of validation results. Solution:
+<br>
 
-
-* During testing of my error pages, I realized that the order of URL paths in urls.py is crucial. Specifically, the empty ("") path must always be the last entry. Initially, my error page tests weren’t working because I had added the test paths at the end, which caused the empty path to interfere. Once I corrected the order, everything worked as expected.
+    - I Updated the contact_us view to retain the form data and display validation errors when the form submission is invalid.
+    - Instead of reinitializing the form unconditionally, the logic now ensures that:
+        - If the form is valid, it saves the data and shows a success message.
+        - If the form is invalid, it re-renders the page with the submitted data and error messages.
 
 ***
