@@ -69,14 +69,14 @@ It's also possible to Sign Up for the FIsherman's Friends newsletter in the foot
 
 ### Features by page
 
-#### Home Page
+### Home Page
 The homepage introduces Hooked on Fish with a striking hero image and a clear call-to-action, encouraging visitors to learn more about the business and its products.
 
 ![Home Page](README-files/home-page.png)
 
 ***
 
-#### About Us Page
+### About Us Page
 The About page tells the story of Hooked on Fish, focusing on Thomas's experience as a fisherman, the boat Fortibus, and the business’s commitment to sustainable fishing practices.
 
 ![Who We Are](README-files/about.png)
@@ -85,7 +85,7 @@ The About page tells the story of Hooked on Fish, focusing on Thomas's experienc
 
 ***
 
-#### Products Page
+### Products Page
 This page showcases the available seafood, providing descriptions and sustainability notes for each type of catch. The page is designed for easy future expansion into an e-commerce platform.
 
 ![All Products](README-files/all-products.png)
@@ -94,14 +94,14 @@ This page showcases the available seafood, providing descriptions and sustainabi
 
 ***
 
-#### Profile
+### Profile
 The personalized profile page gives logged-in members a clear overview of their past orders. It also allows them to save and update their delivery information for a smoother checkout experience.
 
 ![Dashboard](README-files/profile.png)
 
 ***
 
-#### Where to buy Pages
+### Where to buy Pages
 On these pages, visitors can read information on where and how to buy the Hooked on Fish products.
 
 ![Buy Online](README-files/buy-online.png)
@@ -110,35 +110,35 @@ On these pages, visitors can read information on where and how to buy the Hooked
 
 ***
 
-#### CRUD for SuperUser
+### CRUD for SuperUser
 A superuser has full CRUD functionality to manage the products on the website.
 <br>
 For users who are not logged in, the Edit and Delete product options are not accessible.
 <hr>
 
-#### Products when logged in as a super user:
+### Products when logged in as a super user:
 ![Story](README-files/product-login.png)
 
-#### Product Management page for a super user:
+### Product Management page for a super user:
 ![Story](README-files/product-edit.png)
 
 ***
 
-#### Contact Page
+### Contact Page
 A contact form allows customers to reach out with inquiries, whether they’re looking for specific seafood, bulk orders, or general information. The form includes a dropdown menu for users to select their inquiry type.
 
 ![Contact](README-files/contact.png)
 
 ***
 
-#### Sign-Up Page
+### Sign-Up Page
 A page where users can register for an account on the Hooked on Fish website.
 
 ![Sign Up](README-files/signup.png)
 
 ***
 
-#### Custom Error Handler Page
+### Custom Error Handler Page
 Custom error pages to ensure user-friendly navigation, even in unexpected situations.
 
 ![Sign Up](README-files/custom-error.png)

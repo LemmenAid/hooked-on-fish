@@ -385,9 +385,9 @@ Below are the results from the various apps on my application that I've tested:
 * When a user submitted the contact form with invalid data, the page reloaded with a fresh form, causing error messages to disappear instead of being displayed. This happened because the form was always reinitialized after a POST request, regardless of validation results. Solution:
 <br>
 
-    - I Updated the contact_us view to retain the form data and display validation errors when the form submission is invalid.
-    - Instead of reinitializing the form unconditionally, the logic now ensures that:
-        - If the form is valid, it saves the data and shows a success message.
-        - If the form is invalid, it re-renders the page with the submitted data and error messages.
+* I Updated the contact_us view to retain the form data and display validation errors when the form submission is invalid.
+* Instead of reinitializing the form unconditionally, the logic now ensures that:
+    - If the form is valid, it saves the data and shows a success message.
+    - If the form is invalid, it re-renders the page with the submitted data and error messages.
 
 ***
