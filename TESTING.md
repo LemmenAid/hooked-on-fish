@@ -155,6 +155,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | apps.py | ![screenshot](TESTING-files/python-contact-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-contact-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-contact-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-contact-tests.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-contact-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-contact-views.png) | Pass: No Errors |
 
@@ -188,6 +189,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | apps.py | ![screenshot](TESTING-files/python-profiles-apps.png) | Pass: No Errors |
 | forms.py | ![screenshot](TESTING-files/python-profiles-forms.png) | Pass: No Errors |
 | models.py | ![screenshot](TESTING-files/python-profiles-models.png) | Pass: No Errors |
+| tests.py | ![screenshot](TESTING-files/python-profiles-tests.png) | Pass: No Errors |
 | urls.py | ![screenshot](TESTING-files/python-profiles-urls.png) | Pass: No Errors |
 | views.py | ![screenshot](TESTING-files/python-profiles-views.png) | Pass: No Errors |
 
@@ -366,7 +368,10 @@ Below are the results from the various apps on my application that I've tested:
 | --- | --- | --- | --- |
 | About | tests.py | 100% | ![screenshot](TESTING-files/automated-about.png) |
 | Bag | tests.py | 94% | ![screenshot](TESTING-files/automated-bag.png) |
-| Checkout | tests.py | 99% | ![screenshot](TESTING-files/automated-checkout.png) |
+| Checkout | tests.py | 70% | ![screenshot](TESTING-files/automated-checkout.png) |
+| Contact | tests.py | 99% | ![screenshot](TESTING-files/automated-contact.png) |
+| Home | tests.py | 100% | ![screenshot](TESTING-files/automated-home.png) |
+| Profiles | tests.py | 100% | ![screenshot](TESTING-files/automated-profiles.png) |
 
 ***
 

@@ -43,7 +43,7 @@ class BagViewsTests(TestCase):
         messages = list(get_messages(response.wsgi_request))
         self.assertEqual(str(
             messages[0]), f"Maximum quantity for {self.product.name} =20."
-                           "Quantity set to 20.")
+                           " Quantity set to 20.")
 
     def test_add_to_bag_invalid_quantity(self):
         """Test adding a non-integer quantity"""

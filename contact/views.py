@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.contrib import messages
-from .models import Contact
 from .forms import ContactForm
 
 
@@ -22,9 +21,13 @@ def contact_us(request):
             messages.add_message(request, messages.SUCCESS,
                                  "Contact request received!"
                                  " We endeavour to respond within 2 days.")
-
-    contact = Contact.objects.all()
-    contact_form = ContactForm()
+            contact_form = ContactForm()
+        else:
+            messages.add_message(request, messages.ERROR,
+                                 "There was an error with your submission."
+                                 " Please check the form and try again.")
+    else:
+        contact_form = ContactForm()  # Only reset on GET requests
 
     return render(
         request,
