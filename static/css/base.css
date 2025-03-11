@@ -521,3 +521,11 @@ body {
         letter-spacing: 1px;
     }
 }
+
+/* small mobile screens only */
+@media (max-width: 450px) {
+    .footer-container {
+        margin-top: 200px;
+       
+    }
+}
