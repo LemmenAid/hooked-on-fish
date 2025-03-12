@@ -237,6 +237,8 @@ Marketing Goals:
 
 ### Marketing Strategies
 
+****
+
 #### Search Engine Optimization (SEO)
 SEO will help attract users searching for fresh seafood or sustainable fishing businesses online.
 
@@ -271,7 +273,7 @@ I've created a Facebook business Page for Hooked on Fish.
 ****
 
 #### Fisherman's Friends Newsletter 
-The Fisherman’s Friends newsletter keeps customers informed about seasonal offerings, market appearances, and exclusive deals, reinforcing brand loyalty.
+I have integrated a newsletter sign-up form into the application, allowing users to subscribe with their email addresses if they wish to receive updates and news. This provides an easy way for customers to stay informed about new products, special offers, and business updates.
 
 <details>
 <summary> Screenshot of  the Hooked on Fish Mailchimp contact list:
@@ -316,14 +318,6 @@ Further links for future implementation:
 - [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
 - [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
 - [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
-
-***
-
-### Newsletter Marketing
-
-I have integrated a newsletter sign-up form into the application, allowing users to subscribe with their email addresses if they wish to receive updates and news. This provides an easy way for customers to stay informed about new products, special offers, and business updates.
-
-For convenience, users can unsubscribe at any time by following the link provided in their subscription confirmation email.
 
 ***
 
