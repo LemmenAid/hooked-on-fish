@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -151,7 +151,7 @@
                         <!-- Mail Chimp subscribe from -->
                         <div id="mc_embed_shell">
                             <div id="mc_embed_signup">
-                                <form action="https://herokuapp.us3.list-manage.com/subscribe/post?u=e180abbf3deff5eecfecdbd6e&amp;id=8947d8b6ac&amp;f_id=009940e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                                <form action="https://herokuapp.us3.list-manage.com/subscribe/post?u=e180abbf3deff5eecfecdbd6e&amp;id=8947d8b6ac&amp;f_id=009940e3f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" rel="noopener noreferrer">
                                     <div id="mc_embed_signup_scroll"><h2>SUBSCRIBE TO OUR FISHERMAN'S FRIENDS NEWSLETTER</h2>
                                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                                         <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
@@ -183,7 +183,7 @@
             </div>
             <div class="footer mb-3 py-3 nav-bg text-center text-black">
                 <p class="m-0">© 2025 Hooked on Fish, All rights reserved.</p>
-                <a class="text-dark" href="https://github.com/LemmenAid/hooked-on-fish" rel="noopener noreferrer" target="_blank">GitHub/Hooked on Fish</a>
+                <a class="text-dark" href="https://github.com/LemmenAid/hooked-on-fish" rel="noopener noreferrer" target="_blank" aria-label="link to GitHub page of website">GitHub/Hooked on Fish</a>
             </div>
         </div>
 

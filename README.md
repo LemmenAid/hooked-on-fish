@@ -212,15 +212,41 @@ I started with creating the User Stories. Then these stories were broken down in
 
 ### E-commerce Business Model
 
-Hooked on Fish operates on a Business-to-Customer (B2C) model, selling freshly caught seafood directly to individual customers. The focus is on simple, one-time transactions without the need for subscriptions.
+Hooked on Fish operates on a Business-to-Customer (B2C) model, selling freshly caught seafood directly to individual customers. The primary goal of the business is to provide high-quality, sustainably sourced seafood while fbuilding a direct connection between the customer and the local fishing industry.
 
-The website is still in its early development stages but already includes a newsletter system and social media integration to support marketing efforts.
+To achieve this, the business relies on a multi-channel approach, integrating social media engagement, SEO optimization, and word-of-mouth marketing to drive traffic and build a loyal customer base. Platforms like Instagram and Facebook serve as key tools for showcasing daily catches, behind-the-scenes content, and engaging with the community. Additionally, the Fisherman’s Friends newsletter keeps customers informed about seasonal offerings, market appearances, and exclusive deals, reinforcing brand loyalty.
 
-Social media, particularly platforms like Facebook, plays a key role in building a community around the business and increasing site traffic. Meanwhile, the Fisherman’s Friends newsletter keeps customers informed about fresh catches, special offers, market days, and other updates.
+By emphasizing sustainability, quality, and transparency, Hooked on Fish positions itself as a trusted source for fresh seafood in the local market, distinguishing itself from larger, less personalized competitors.
+
+Target Audience:
+- Locals in Connemara and Galway looking for fresh, high-quality seafood.
+- Health-conscious individuals and foodies interested in sustainable, authentic food options.
+- Tourists seeking unique local experiences.
+
+Needs:
+- Easy access to fresh, locally caught seafood.
+- Confidence in the sustainability and authenticity of the product.
+
+Marketing Goals:
+- Build brand awareness in the local community.
+- Drive traffic to the website and encourage newsletter sign-ups.
+- Increase direct sales through online orders and social media engagement.
+- Establish a loyal customer base through storytelling and consistent quality.
 
 ***
 
-### Search Engine Optimization (SEO) & Social Media Marketing
+### Marketing Strategies
+
+#### Search Engine Optimization (SEO)
+SEO will help attract users searching for fresh seafood or sustainable fishing businesses online.
+
+- Optimize keywords like:
+     - Short-tail: "local seafood," "sustainable fish," "fresh seafood Galway."
+     - Long-tail: "daily fresh seafood delivery Connemara," "where to buy sushi-grade fish in Ireland."
+
+- Local SEO:
+     - List the business on Google My Business.
+     - Encourage customers to leave reviews on Google Maps and other platforms.
 
 I’ve selected relevant keywords to improve search engine visibility and help users find Hooked on Fish more easily. These include a mix of short-tail (head terms) keywords for broad searches and long-tail keywords for more specific queries.
 
@@ -230,6 +256,21 @@ I’ve selected relevant keywords to improve search engine visibility and help u
 
 ![User Story Template](README-files/keywords.png)
 </details>
+
+#### Social Media Marketing
+Social media platforms are perfect for building a community around the brand and showcasing the authenticity of "Hooked on Fish." Users can connect with the story, see behind-the-scenes content, and stay updated on daily offerings.
+
+Platforms to Use:
+- Instagram: Visual storytelling through boat videos, photos of fresh catches, and updates about the day's haul.
+- Facebook: Engage local audiences, share updates, and promote events or offers.
+
+#### Word-of-Mouth Marketing
+Local businesses thrive on community support and word-of-mouth referrals.
+
+Strategies:
+- Create a referral program offering discounts or freebies for referred customers.
+- Partner with local events or markets to increase visibility.
+- Encourage satisfied customers to share their experiences on social media.
 
 ***
 
