@@ -257,12 +257,16 @@ I’ve selected relevant keywords to improve search engine visibility and help u
 ![User Story Template](README-files/keywords.png)
 </details>
 
+****
+
 #### Social Media Marketing
 Social media platforms are perfect for building a community around the brand and showcasing the authenticity of "Hooked on Fish." Users can connect with the story, see behind-the-scenes content, and stay updated on daily offerings.
 
 Platforms to Use:
 - Instagram: Visual storytelling through boat videos, photos of fresh catches, and updates about the day's haul.
 - Facebook: Engage local audiences, share updates, and promote events or offers.
+
+****
 
 #### Word-of-Mouth Marketing
 Local businesses thrive on community support and word-of-mouth referrals.
@@ -271,6 +275,23 @@ Strategies:
 - Create a referral program offering discounts or freebies for referred customers.
 - Partner with local events or markets to increase visibility.
 - Encourage satisfied customers to share their experiences on social media.
+
+****
+
+#### Fisherman's Friends Newsletter 
+The Fisherman’s Friends newsletter keeps customers informed about seasonal offerings, market appearances, and exclusive deals, reinforcing brand loyalty.
+
+<details>
+<summary> Screenshot of  the Hooked on Fish Mailchimp contact list:
+</summary>
+
+![mailchimp](README-files/mailchimp-contacts.png)
+</details>
+
+<br>
+
+Subscribe to the newsletter in the footer: 
+![subscribe](README-files/footer.png)
 
 ***
 
