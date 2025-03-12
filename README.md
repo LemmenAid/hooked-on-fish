@@ -260,21 +260,13 @@ I’ve selected relevant keywords to improve search engine visibility and help u
 ****
 
 #### Social Media Marketing
-Social media platforms are perfect for building a community around the brand and showcasing the authenticity of "Hooked on Fish." Users can connect with the story, see behind-the-scenes content, and stay updated on daily offerings.
+Building an engaged social media presence is a powerful way to drive traffic to the business site and increase sales. By actively participating in online communities and sharing relevant content, the brand can build relationships with customers and enhance its visibility.
 
-Platforms to Use:
-- Instagram: Visual storytelling through boat videos, photos of fresh catches, and updates about the day's haul.
-- Facebook: Engage local audiences, share updates, and promote events or offers.
+Leveraging popular platforms like Facebook, which have a broad user base, helps maximize reach and attract potential customers. Regular updates, engaging posts, and direct interactions with followers contribute to a strong online presence, ultimately strengthening brand recognition and customer loyalty.
 
-****
+I've created a Facebook business Page for Hooked on Fish.
 
-#### Word-of-Mouth Marketing
-Local businesses thrive on community support and word-of-mouth referrals.
-
-Strategies:
-- Create a referral program offering discounts or freebies for referred customers.
-- Partner with local events or markets to increase visibility.
-- Encourage satisfied customers to share their experiences on social media.
+![screenshot](README-files/fb-mockup.png)
 
 ****
 
@@ -324,18 +316,6 @@ Further links for future implementation:
 - [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
 - [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
 - [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
-
-***
-
-### Social Media Marketing
-
-Building an engaged social media presence is a powerful way to drive traffic to the business site and increase sales. By actively participating in online communities and sharing relevant content, the brand can foster relationships with customers and enhance its visibility.
-
-Leveraging popular platforms like Facebook, which have a broad user base, helps maximize reach and attract potential customers. Regular updates, engaging posts, and direct interactions with followers contribute to a strong online presence, ultimately strengthening brand recognition and customer loyalty.
-
-I've created a Facebook business Page for Hooked on Fish.
-
-![screenshot](README-files/fb-mockup.png)
 
 ***
 
